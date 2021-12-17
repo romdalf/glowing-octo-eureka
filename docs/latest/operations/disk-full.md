@@ -1,6 +1,5 @@
----
-title: Disk Full
----
+# Disk Full
+
 
 When the physical disks in your cluster get full, or start using disk space too
 fast, Kubernetes will automatically apply the `DiskPressure:NoExecute` taint.
@@ -58,7 +57,7 @@ A replica on a full disk can't be failed over successfully.
 ## Recovering from a full disk
 
 To recover from a disk full error, you can either add new storage space
-into the affected node, or delete existing persistent volume claims`.
+into the affected node, or delete existing persistent volume claims.
 
 >**N.B.** However you choose to resolve the issue, the **Ondat Daemonset
 >Pod must be restarted**.
@@ -72,11 +71,9 @@ boot cycles, so after the pod restarts, volumes can operate normally once more.
 If you choose to recover by expanding your capacity, you have two main options:
 
 1. Add new storage devices at `/var/lib/storageos/data/dev[0-9]+` as described
-   [here]({{< ref "docs/operations/managing-host-storage.md"
-   >}}#option-1-mount-additional-devices).
+   [here](../operations/managing-host-storage.md#option-1-mount-additional-devices).
 2. Expand the underlying filesystem that Ondat is using as described
-   [here]({{< ref "docs/operations/managing-host-storage.md"
-   >}}#option-2-expand-existing-devices-backed-by-lvm).
+   [here](../operations/managing-host-storage.md"#option-2-expand-existing-devices-backed-by-lvm).
 
 After expanding capacity remember to restart the Ondat daemonset pod.
 

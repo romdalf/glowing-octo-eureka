@@ -1,6 +1,8 @@
 ## structure 
-created an archive, previous, latest, next folders
-copy 2.5 in latest
+- ~~created an archive, previous, latest, next folders~~
+- ~~copy 2.5 in latest~~
+- revisit the multiple link between concept, reference and operation 
+maybe into a top level topic with a breakdown in 1 or multiple pages
 
 ## support.md
 - 2 links to website support | dead
@@ -120,3 +122,34 @@ don't let people benchmark a sub-optimal setup!
 - ~~modify link to usecases~~
 
 ## operations
+### cluster-id.md
+- update the GUI screenshot to reflect license changes
+- ~~modify image link~~
+### delete-stos-objects.md
+### disk-full.md
+- ~~modify link to operations/managing-host-storage~~
+- ~~modify link to operations/managing-host-storage~~
+### encryption.md
+- ~~modify link to reference/encryption~~
+- revisit the content to provide more context
+### failure-modes.md
+- ~~modify link to concepts/replication~~
+- include the content/failure-modes.md 
+### fening.md
+- ~~modify link to concepts/fencing.md~~
+### firstpvc.md
+- update git reference to ondat account
+- ~~modify link to usecases/_index.md~~
+### health.md
+- ~~modify link to reference/cli/_index.md~~
+### label-stos.objects.md
+- ~~modify link to reference/kubernetes-object-sync.md~~
+- ~~modify link to operations/firstpvc.md~~
+### licensing.md
+- breakdown into 3 pages; offering, cli, gui
+- remove tabs
+- ~~modify link to self-eval.md~~
+- ~~modify image links~~
+- ~~modify link to reference/cli~~
+## managing-host-storage.md
+

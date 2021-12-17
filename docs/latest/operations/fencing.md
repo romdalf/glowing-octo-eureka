@@ -1,17 +1,14 @@
----
-title: Fencing
----
+## Fencing
 
 For information regarding the Ondat Fencing feature, see our
-[fencing concepts page]({{< ref "docs/concepts/fencing.md" >}}).
+[fencing concepts page](../concepts/fencing.md).
 
 ## Labeling a pod for fencing
 
 When Ondat detects that a node has gone offline or become partitioned, it
 marks the node offline and performs volume failover operations.
 
-The [Ondat Fencing
-Controller](https://github.com/storageos/api-manager/tree/master/controllers/fencer)
+The [Ondat Fencing Controller](https://github.com/storageos/api-manager/tree/master/controllers/fencer)
 watches for node failures and determines if there are any pods targeted for
 fencing. In order for a pod to be fenced, the following criteria is required.
 
@@ -26,7 +23,6 @@ rescheduled on another node.
 This is typically the case when a volume was configured to not have any
 replicas, and the node with the single copy of the data is offline. In this
 case it is better to wait for the Node to recover.
-
 
 ### StatefulSet example with fencing enabled
 
@@ -138,8 +134,6 @@ The following example shows how the Ondat API manager fences a Pod.
     > The Ondat API Manager detects all the pods that are on the failed
     > node, and selects only the ones that meet the fencing criteria as
     > described above. In this case only `mysql-0` is selected for fencing.
-
-
 
 
 1. Check the pod's new node

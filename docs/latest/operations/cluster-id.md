@@ -1,7 +1,4 @@
----
-title: Find ClusterID
-linkTitle: ClusterID
----
+# ClusterID
 
 Every Ondat cluster has a unique ClusterID generated at bootstrap. A
 Ondat Licence is specific for a ClusterID.
@@ -29,7 +26,7 @@ used to create the cluster and go to the "Licence" section on the left
 navigation menu.
 
 
-![Licence page](/images/docs/operations/licensing/licence-page.png)
+![Licence page](../assets/images/operations/licensing/licence-page.png)
 
 
 ### CLI

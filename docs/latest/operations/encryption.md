@@ -1,9 +1,6 @@
----
-title: Encryption
----
+# Encryption
 
-For more detail on encryption at rest in Ondat, see [the reference
-page]({{< ref "docs/reference/encryption.md" >}}).
+For more detail on encryption at rest in Ondat, see [the reference page](../reference/encryption.md).
 
 ## Enabling encryption on a volume
 

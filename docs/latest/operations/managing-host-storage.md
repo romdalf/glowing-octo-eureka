@@ -1,9 +1,4 @@
----
-linkTitle: Host Storage
-title: Managing Host Storage
-aliases:
-  - /ui-help/nodes/details/learn-more # url referenced from UI
----
+# Host Storage
 
 Ondat uses the storage available on the nodes where it is installed to
 present as available for volumes.

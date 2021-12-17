@@ -1,9 +1,7 @@
----
-title: Labeling Ondat Objects
----
+# Labeling Ondat Objects
+
 For more information regarding the Ondat Label Sync feature, see our
-[Kubernetes Object Sync reference page.]({{<
-ref "docs/reference/kubernetes-object-sync.md" >}})
+[Kubernetes Object Sync reference page.](../reference/kubernetes-object-sync.md)
 
 ## Label Syncing
 The Ondat API Manager handles cases where information from objects in your
@@ -15,8 +13,8 @@ The below guide shows how to apply a label to your PVCs, and how these labels
 sync through to your Ondat Volumes. This operation is used often - for
 example it is used here to add replicas to a Ondat Volume.
 
-1. Create a PVC, following the instructions [here]({{< ref
-   "docs/operations/firstpvc.md"  >}}). When you create a PVC, Ondat
+1. Create a PVC, following the instructions [here](../operations/firstpvc.md). 
+When you create a PVC, Ondat
 automatically provisions an Ondat volume for it. An example PVC and
 Ondat volume can be seen below. Note the labels `app=mysql` and `env=prod`
 under `Labels`in the PVC description and the `VolumeAttributes`of the Ondat

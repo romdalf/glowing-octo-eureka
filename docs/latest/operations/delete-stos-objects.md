@@ -1,6 +1,5 @@
----
-title: Deleting Ondat Objects
----
+# Deleting Ondat Objects
+
 
 When a Kubernetes object is deleted, Ondat controllers automatically sync
 this deletion to Ondat. For example, when a Kubernets node is deleted, this

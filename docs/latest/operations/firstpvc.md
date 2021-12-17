@@ -1,12 +1,4 @@
----
-linkTitle: First PVC
-title: Ondat Volume Guide
-aliases:
-  - /docs/platforms/openshift/howto/provision-volumes
-  - /docs/platforms/openshift/firstvolume/
-  - /docs/platforms/rancher/firstvolume/
-  - /docs/platforms/rancher/firstvolume/index
----
+# First PVC
 
 Follow the recipes on this page to create your first PVC (Persistent Volume
 Claim) using Ondat. Ondat implements dynamic provisioning, so the
@@ -166,4 +158,4 @@ be used to persist data written by a Pod.
     on a new node, the helloworld file would still be avaliable.
 
     **If you wish to see more use cases with actual applications please see our
-    [Use Cases]({{< ref "docs/usecases/_index.md" >}}) documentation.**
+    [Use Cases](../usecases/_index.md) documentation.**

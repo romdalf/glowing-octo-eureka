@@ -1,11 +1,8 @@
----
-title: Cluster health
-linkTitle: Health
----
+# Cluster health
 
 Various tools are available for checking on the status of a cluster.
 
-The [CLI]({{< ref "docs/reference/cli/_index.md" >}}) displays the
+The [CLI](../reference/cli/_index.md) displays the
 status of nodes in the cluster.
 
 ```bash

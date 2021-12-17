@@ -1,15 +1,10 @@
----
-title: Failure Modes
-linkTitle: Failure Modes
----
+## Failure Modes
 
 For more information about replication and failure modes, see our
-[Replication concepts page]({{< ref "docs/concepts/replication"
->}}).
+[Replication concepts page](../concepts/replication).
 
 The failure mode for a specific volume can be set using a label on a PVC or it
-can be set as a parameter on a [StorageClass]({{< ref
-"docs/operations/storageclasses" >}}). The PVC definition takes precedence over
+can be set as a parameter on a [StorageClass](../operations/storageclasses). The PVC definition takes precedence over
 the StorageClass.
 
 ```yaml

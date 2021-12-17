@@ -1,6 +1,4 @@
----
-title: Licensing
----
+# Licensing
 
 A newly installed Ondat cluster doesn't include a default licence. The cluster
 will run unlicenced for 24 hours without any limitations. After this time
@@ -62,10 +60,10 @@ block your current terminal session till the port-forward is stopped):
 $ kubectl port-forward -n storageos svc/storageos 5705
 ```
 
-The Ondat GUI can then be accessed from http://localhost:5705 using the default
+The Ondat GUI can then be accessed from `http://localhost:5705` using the default
 `storageos-api` secret defined during the installation as credentials (for
 example: login: storageos / password: storageos) when using the
-[Self-Evaliation Guide]({{< ref "docs/self-eval.md" >}}).
+[Self-Evaliation Guide](../self-eval.md).
 
 Depending on the environment, connecting to the localhost might not work when
 using a remote administration machine. If this host has a private or public IP,
@@ -79,7 +77,7 @@ The Ondat GUI can then be accessed from `http://10.20.20.20:5705`  As an
 alternative, you may prefer to use an Ingress controller. You can retrieve the
 Ondat cluster by browsing the __Licence__ page as shown below:
 
-![license](/images/docs/concepts/licensing.png)
+![license](../assets/images/concepts/licensing.png)
 
 ## Ondat GUI - Obtaining a Licence via the GUI 
 
@@ -120,7 +118,7 @@ NaalLsK/96bJov6tpbg96g==
 > just the signature. Keep in mind that the encoding of the file must not
 > change.
 
-![Apply Licence Key](/images/docs/operations/licensing/apply-licence-key.png)
+![Apply Licence Key](../assets/images/operations/licensing/apply-licence-key.png)
 
 {{% /tab %}}
 {{% tab tabRef="Ondat CLI" %}}
@@ -185,7 +183,7 @@ $ storageos apply licence --from-file /path/to/storageos-licence.dat
 ```
 
 For more information refer to the licence
-[CLI command]({{< ref "docs/reference/cli" >}}) reference documentation.
+[CLI command](../reference/cli) reference documentation.
 
 {{% /tab %}}
 {{< /tabs >}}
