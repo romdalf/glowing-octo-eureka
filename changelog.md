@@ -255,3 +255,20 @@ don't let people benchmark a sub-optimal setup!
 - curation of supported distro should be in a support matrix
 - ~~fix bad internal hyperlinks~~
 - ~~modify link to reference/cluster-operator/configuration.md~~
+## reference
+### bundles
+- to revamp within a support section
+#### _index.md
+#### diagnostic-bundle.md
+- ~~modify link to reference/cli/_index.md~~
+- ~~modify link to reference/gui.md~~
+- rebrand gui 
+#### support_bundle.md
+- ~~modify link to reference/bundles/diagnostic-bundle.md~~
+- update includes
+- update git reference from storageos to ondat
+- remove the concept of platform regarding plugin
+- ~~modify link to reference/cli/_index.md~~
+
+
+

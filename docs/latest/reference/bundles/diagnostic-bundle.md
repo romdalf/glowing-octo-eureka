@@ -1,6 +1,4 @@
----
-title: Diagnostic bundle
----
+# Diagnostic bundle
 
 Ondat can generate a cluster diagnostic bundle from the GUI or CLI under
 user request. The bundle packages the information needed for the engineering
@@ -11,7 +9,7 @@ issues you may be experiencing.
 
 ### CLI
 
-The [CLI]({{< ref "docs/reference/cli/_index.md" >}}) can generate
+The [CLI](../../reference/cli/_index.md) can generate
 the bundle.
 
 ```bash
@@ -21,7 +19,7 @@ $ storageos get diagnostics
 
 ### GUI
 
-Or you can use the [StoregeOS GUI]({{< ref "docs/reference/gui.md" >}}).
+Or you can use the [StoregeOS GUI](../../reference/gui.md).
 1. Go to section "Cluster"
 1. Press the button "DOWNLOAD DIAGNOSTICS".
 

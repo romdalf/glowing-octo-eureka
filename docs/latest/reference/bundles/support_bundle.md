@@ -1,6 +1,4 @@
----
-title: Support bundle
----
+# Support bundle
 
 The support bundle is a tool that gathers information both about Ondat and
 the environment in which it is operating. It provides information about the
@@ -8,7 +6,7 @@ state and configuration of the cluster, nodes and other Kubernetes objects, as
 well as system performance metrics.
 
 The support bundle is an addition rather than a replacement to the [diagnostic
-bundle]({{< ref "docs/reference/bundles/diagnostic-bundle.md" >}}).
+bundle](../../reference/bundles/diagnostic-bundle.md).
 
 ## Install Kubectl Ondat plugin
 
@@ -68,8 +66,7 @@ kube-system as a Pod with the label `run=cli`. The tool will exec into this pod
 to get information from the Ondat API. If the Ondat CLI Pod does not
 match this criteria, you can either pull the YAML file and change the selector
 in the file, or add the label to the Pod. You can run the cli container
-following these [instructions]({{< ref
-"docs/reference/cli/_index.md#run-cli-as-a-container">}}).
+following these [instructions](../../reference/cli/_index.md#run-cli-as-a-container">}}).
 
 ### Data collected in the bundle
 
