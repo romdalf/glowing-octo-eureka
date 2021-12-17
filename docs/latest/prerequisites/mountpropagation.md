@@ -1,7 +1,4 @@
----
-title: Mount Propagation
-weight: 300
----
+# Mount Propagation
 
 > Modern versions of Kubernetes, Docker or other Container Runtimes enable
 > mount propagation by default.

@@ -1,11 +1,7 @@
----
-title: Etcd
-weight: 600
----
+# Etcd
 
 Ondat requires an etcd cluster in order to function. For more information
-on why etcd is required please see our [etcd concepts]({{< ref
-"docs/concepts/etcd.md">}}) page.
+on why etcd is required please see our [etcd concepts](../concepts/etcd.md) page.
 
 We do not support using the Kubernetes etcd for Ondat installations.
 
@@ -21,7 +17,7 @@ landscape is changing rapidly, watch this space), and our production guidance
 remains to install etcd on separate machines outside of your Kubernetes
 cluster. This method is the best way to ensure a stable Ondat cluster.
 Please see our etcd operations page for additional information on deployment
-[best practices]({{< ref "docs/operations/etcd/_index.md">}}) and concerns.
+[best practices](../operations/etcd/_index.md) and concerns.
 
 1. Ephemeral pods within Kubernetes (*Testing*)
 1. External Virtual Machines (*Production*)
@@ -283,8 +279,7 @@ deployed as a managed service.
 
 Ondat doesn't require a high performance etcd cluster, as the throughput
 of metadata to the cluster is low. However, we recommend a careful assessment
-of IOPS capacity [best practices]({{<ref
-"docs/operations/etcd/_index.md#iops-requirements">}}) to ensure that etcd
+of IOPS capacity [best practices](../operations/etcd/_index.md#iops-requirements) to ensure that etcd
 operates normally.
 
 Depending on the level of redundancy you feel comfortable with you can install
@@ -296,8 +291,8 @@ directory is modified. The ansible playbook below will default the etcd
 installation directory to `/var/lib/storageos-etcd`.__
 
 You can choose between two installation options.
-- [Manual Installation]({{< ref "#installation---manual" >}})
-- [Ansible Installation]({{< ref "#installation---ansible" >}})
+- [Manual Installation](#installation---manual)
+- [Ansible Installation](#installation---ansible)
 
 
 ### Installation - Manual
@@ -465,7 +460,7 @@ using standard package management commands and systemd manifests.
     8b698843a4658823, started, etcd-rqdf9thx5p, http://172.28.0.3:2380, http://172.28.0.3:2379
     ```
 
-    > Read the [etcd operations]({{<ref "docs/operations/etcd/_index.md">}})
+    > Read the [etcd operations](../operations/etcd/_index.md)
     > page for our etcd recommendations.
 
 ### Installation - Ansible
@@ -575,8 +570,7 @@ having a network partition between them will result in quorum lost.
 
 Kubernetes external services use a DNS name to reference external endpoints,
 making them easy to reference from inside the cluster.  You can use the
-example from the [helper github
-repository](https://github.com/storageos/deploy/tree/master/k8s/deploy-storageos/etcd-helpers/etcd-external-svc)
+example from the [helper github repository](https://github.com/storageos/deploy/tree/master/k8s/deploy-storageos/etcd-helpers/etcd-external-svc)
 to deploy the external Service. Using an external service can make monitoring
 of etcd from Prometheus easier.
 {{% /tab %}}
@@ -586,6 +580,4 @@ of etcd from Prometheus easier.
 
 During installation of Ondat the `kvBackend.address` parameter of the
 Ondat operator is used to specify the address of the etcd cluster. See the
-[Ondat cluster operator configuration](
-{{< ref "docs/reference/cluster-operator/examples.md"
->}}#installing-with-an-external-etcd) examples for more information.
+[Ondat cluster operator configuration](../reference/cluster-operator/examples.md#installing-with-an-external-etcd) examples for more information.

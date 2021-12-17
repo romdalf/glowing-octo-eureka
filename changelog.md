@@ -88,7 +88,7 @@ don't let people benchmark a sub-optimal setup!
 - change tabs to a intro with supported k8s version
 - confirm there is no difference despite k8s version
 - create a dedicate airgap deployment guide
-- ~~modify link to refernce/kubectl-plugin~~
+- ~~modify link to reference/kubectl-plugin~~
 - remove first volume
 ### openshift.md
 - break down in 3 pages: operatorhub, markeplace, manual
@@ -225,3 +225,33 @@ don't let people benchmark a sub-optimal setup!
 ### rancher.md
 - ~~modify link to install/rancher.md~~
 - ~~modify link to prerequisites/systemconfiguration.md~~
+## prerequisites
+### _index.md
+- update include references
+- revise a merge with support matrix
+- ~~modify link to prerequisites/mountpropagation.md~~
+- ~~modify link to prerequisites/etcd.md~~
+- ~~modify link to prerequisites/systemconfiguration.md~~
+- ~~modify link to reference/cli/_index.md~~
+- ~~modify link to prerequisites/ipv6.md~~
+### etcd
+- ~~modify link to concepts/etcd.md~~
+- ~~modify link to operations/etcd/_index.md~~
+- remove tabs
+- remove reference to coreos archived repo
+- ~~modify link to operations/etcd/_index.md~~
+- ~~modify page hyperlinks~~
+- ~~modify link to operations/etcd/_index.md~~
+- update git reference from storageos to ondat
+- ~~modify link to reference/cluster-operator/examples.md~~
+### firewals.md
+### ipv6.md
+### max-aio.md
+### mountpropagation.md
+- may be candidate to archive
+### pidlimits.md
+- update git reference from storageos to ondat
+### systemconfiguration.md
+- curation of supported distro should be in a support matrix
+- ~~fix bad internal hyperlinks~~
+- ~~modify link to reference/cluster-operator/configuration.md~~

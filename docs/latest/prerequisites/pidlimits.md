@@ -1,7 +1,4 @@
----
-title: "PID Limits"
-weight: 400
----
+# PID Limits
 
 Ondat recommends that a [PID
 cgroup](https://www.kernel.org/doc/html/latest/admin-guide/cgroup-v2.html#pid)
@@ -19,7 +16,7 @@ runtime. Generally the limit is set to the machine wide default limit of 32768
 but some environments can set this as low as 1024. A low PID limit may prevent
 Ondat from spawning the required threads.
 
-The [Ondat init container]( https://github.com/storageos/init ) runs a script
+The [Ondat init container](https://github.com/storageos/init) runs a script
 that checks for the PID limit of the PID cGroup slice that the Ondat pod
 runs in. If the
 [script](https://github.com/storageos/init/blob/master/scripts/02-limits/limits.sh)

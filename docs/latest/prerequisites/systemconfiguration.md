@@ -1,7 +1,4 @@
----
-title: System Configuration
-weight: 100
----
+# System Configuration
 
 Ondat requires certain kernel modules to function. In particular it
 requires [Linux-IO](http://linux-iscsi.org/wiki/Main_Page), an open-source
@@ -23,7 +20,7 @@ We require the following modules to be loaded:
 > TCMU and fall back to FUSE. However if Ondat is started first there is no
 > mechanism for Ondat to fallback to FUSE if another application begins to
 > use TCMU. TCMU can be disabled using the
-> [DISABLE_TCMU](/docs/reference/cluster-operator/configuration)
+> [DISABLE_TCMU](../reference/cluster-operator/configuration.md)
 > StorageOSCluster spec parameter.
 
 Depending on the distribution, the modules are shipped as part of the
@@ -43,7 +40,7 @@ Ubuntu 16.04/18.04 requires the installation of additional packages.
 
 > N.B. Ubuntu 16.04/18.04 AWS and Ubuntu 18.04 GCE do not provide the
 > necessary linux-image-extra package - [see
-> below](/docs/prerequisites/systemconfiguration#ubuntu-on-aws-and-gce) for more information
+> below](../prerequisites/systemconfiguration.md#ubuntu-with-aws-or-gce-kernels) for more information
 
 ## Ubuntu Package Installation
 
@@ -51,7 +48,7 @@ Ubuntu 16.04/18.04 requires the installation of additional packages.
 
 Ubuntu 16.04:
 
-```bash
+```bash 
 sudo apt -y update
 sudo apt -y install linux-image-extra-$(uname -r)
 ```

@@ -1,11 +1,6 @@
----
-title: Firewalls
-linkTitle: Ports and Firewall settings
-weight: 200
----
+# Firewalls
 
 ## Port list
-
 Ondat daemons listen on specific ports, which we require to be accessible
 between all nodes in the cluster:
 
@@ -22,14 +17,10 @@ Ondat also uses [ephemeral](https://en.wikipedia.org/wiki/Ephemeral_port)
 ports to dial-out to these ports on other Ondat nodes. For this reason,
 outgoing traffic should be enabled.
 
-
 ## Firewalls and VPS providers
-
 Some VPS providers (such as Digital Ocean) ship default firewall rulesets which
 must be updated to allow Ondat to run. Some example rules are shown below -
 modify to taste.
-
-
 
 ### UFW
 For distributions using UFW, such as RHEL and derivatives:
@@ -42,7 +33,6 @@ ufw allow 25705:25960/tcp
 ```
 
 ### Firewalld
-
 For distributions that enable firewalld to control iptables such as some installations of OpenShift.
 
 ```bash

@@ -1,7 +1,4 @@
----
-title: Max AIO
-weight: 500
----
+# Max AIO
 
 As part of the dataplane operation, Ondat uses Linux AIO (Asynchronous
 Input Output) contexts to serve I/O requests without blocking. Ondat
@@ -9,7 +6,6 @@ requires 4 AIO contexts per deployment (i.e. a Ondat volume deployment,
 whether master or replica).
 
 ## Max AIO prerequisite.
-
 By default there is a maximum number of AIO contexts that can be allocated at
 once.
 
@@ -24,14 +20,12 @@ EAGAIN. For more information please see the Linux kernel docs
 [here.](https://www.kernel.org/doc/Documentation/sysctl/fs.txt)
 
 ## Why is this relevant?
-
 As Ondat requires 4 AIO contexts per deployed volume, there is a limit to
 the number of volumes that can be deployed per node. Trying to provision
 additional deployments once the `aio-max-nr` has been reached will fail as the
 kernel will be unable to create enough new AIO contexts.
 
 ## Increasing your AIO context cap.
-
 If your nodes `aio-max-nr` is set too low you can either provision additional
 nodes to reduce the number of deployments per node, or increase the `aio-max-nr`
 kernel parameter.
