@@ -1,6 +1,4 @@
----
-title: Update volume
----
+# Update volume
 
 ## Update a volume
 

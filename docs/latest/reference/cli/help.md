@@ -1,7 +1,4 @@
----
-title: Help
----
-
+# Help
 
 ```bash
 $ storageos help

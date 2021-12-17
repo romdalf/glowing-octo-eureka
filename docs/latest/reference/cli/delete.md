@@ -1,6 +1,4 @@
----
-title: Delete
----
+# Delete
 
 ```bash
 $ storageos delete -h

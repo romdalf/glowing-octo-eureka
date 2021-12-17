@@ -269,6 +269,20 @@ don't let people benchmark a sub-optimal setup!
 - update git reference from storageos to ondat
 - remove the concept of platform regarding plugin
 - ~~modify link to reference/cli/_index.md~~
-
-
-
+### cli
+#### _index.md
+- update git reference from storageos to ondat
+- use git tag latest instead of version
+- update EUSA link
+- update portal link
+- write a page MAN instead of multiple pages
+#### apply.md
+#### attach.md
+#### create.md
+#### delete.md
+#### describe.md
+#### detach.md
+#### get.md
+#### help.md
+#### update.md
+#### version.md

@@ -1,7 +1,4 @@
----
-title: Get
----
-
+# Get
 
 ```bash
 $ storageos get --help

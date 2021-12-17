@@ -1,7 +1,4 @@
----
-title: Describe
----
-
+# Describe
 
 ```bash
 $ storageos describe --help

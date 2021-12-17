@@ -1,6 +1,4 @@
----
-title: Detach Volume
----
+# Detach Volume
 
 ```bash
 $ storageos detach --help

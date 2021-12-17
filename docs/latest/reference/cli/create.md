@@ -1,7 +1,4 @@
----
-title: Create
----
-
+# Create
 
 ```bash
 $ storageos create --help

@@ -1,6 +1,4 @@
----
-title: Apply
----
+# Apply
 
 ## Apply changes to resources
 ```bash

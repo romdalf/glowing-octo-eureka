@@ -1,6 +1,4 @@
----
-title: Version
----
+# Version
 
 ```bash
 $ storageos version --help
