@@ -5,6 +5,7 @@
 - ~~copy 2.5 in latest~~
 - revisit the multiple link between concept, reference and operation 
 maybe into a top level topic with a breakdown in 1 or multiple pages
+- reduce folder structure to 1 level deep max
 
 ## support.md
 - 2 links to website support | dead
@@ -185,4 +186,16 @@ don't let people benchmark a sub-optimal setup!
 - check the need to add a "backup etcd" reco
 ### users.md
 - ~~modify link to operations/namespaces.md~~
-- ~~modify link to operations/policies.md~~˜
+- ~~modify link to operations/policies.md~~
+### Etcd
+#### index.md
+- ~~modify link to prerequisites/etc.md~~
+- ~~modify link to prerequisites/etc.md~~
+- ~~modify link to operations/etcd/_index.md~~
+- update git reference to point to ondat
+#### migrate-etcd-cluster.md
+- ~~modify link to prerequisites/etcd.md~~
+- update git reference to point to ondat
+- ~~modify link to prerequisites/etcd.md~~
+#### storageos-secret-info.md
+- update git reference to coreos (repo archived)

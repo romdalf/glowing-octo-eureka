@@ -1,14 +1,12 @@
----
-title: Etcd
----
+# Etcd
 
-Check the [etcd prerequisites page]({{< ref "docs/prerequisites/etcd.md" >}})
+Check the [etcd prerequisites page](../../prerequisites/etcd.md)
 for a step by step installation of etcd.
 
 ## Best practices
 
-Ondat uses etcd as a service, whether it is deployed following the [step
-by step]({{< ref "docs/prerequisites/etcd.md" >}}) instructions or as a custom
+Ondat uses etcd as a service, whether it is deployed following the 
+[step by step](../../prerequisites/etcd.md) instructions or as a custom
 installation. It is expected that the user maintains the availability and
 integrity of the etcd cluster.
 
@@ -48,8 +46,7 @@ performance, careful assessment is necessary to ensure sufficient capacity.
 The rate of etcd operations is affected by the number of nodes, volumes and
 replicas in the cluster, therefore the figure of 500 is provided as a
 guideline only. A development cluster with 5 nodes will not have the same etcd
-traffic as a production cluster with 100 nodes. Adding [monitoring]({{< ref
-"docs/operations/etcd/_index.md#monitoring" >}}) to etcd will help to
+traffic as a production cluster with 100 nodes. Adding [monitoring](../../operations/etcd/_index.md#monitoring) to etcd will help to
 characterise the traffic, and therefore to assess the individual requirements
 of a cluster and adjust its resources accordingly.
 

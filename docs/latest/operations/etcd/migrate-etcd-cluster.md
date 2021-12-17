@@ -1,13 +1,11 @@
----
-title: Etcd node migration
----
+# Etcd node migration
 
 This procedure explains how to add a new etcd member for your Ondat etcd
 cluster while removing one of the current members. This is useful when the
 nodes hosting etcd must be recycled.
 
 > **It is assumed** that the Ondat etcd cluster is installed following the
-> [production etcd installation]({{< ref "docs/prerequisites/etcd.md#production" >}})
+> [production etcd installation](../../prerequisites/etcd.md#production)
 > page, where etcd nodes are installed on their own machines.
 
 > **It is also assumed** that etcd members are referenced from Kubernetes using a External
@@ -24,8 +22,7 @@ nodes hosting etcd must be recycled.
 Prepare the installation of etcd on a new node, __making sure that etcd is not
 starting__ on that new node.
 
-The steps for preparing an etcd node can be found in the [etcd
-prerequisites]({{< ref "docs/prerequisites/etcd.md#production" >}})
+The steps for preparing an etcd node can be found in the [etcd prerequisites](../../prerequisites/etcd.md#production)
 page.
 
 1. Back up etcd
