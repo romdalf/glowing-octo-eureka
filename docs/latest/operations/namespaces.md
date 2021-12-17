@@ -1,8 +1,4 @@
----
-title: Namespaces
-aliases:
-  - /ui-help/namespaces/learn-more # url referenced from UI
----
+# Namespaces
 
 Namespaces help different projects or teams share a Ondat cluster. Only the
 default namespace is created by default.

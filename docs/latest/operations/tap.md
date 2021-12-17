@@ -1,9 +1,4 @@
----
-title: Topology-Aware Placement (TAP)
-linkTitle: Topology-Aware Placement
-description: >
-    How to enforce high availability across failure domains using TAP
----
+# Topology-Aware Placement (TAP)
 
 Ondat Topology-Aware Placement is a feature that enforces placement of data
 across failure domains to guarantee high availability.

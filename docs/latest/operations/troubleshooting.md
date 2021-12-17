@@ -1,20 +1,4 @@
----
-title: Troubleshooting
-linkTitle: Troubleshooting
-aliases:
-  - /docs/platforms/kubernetes/troubleshoot
-  - /docs/platforms/kubernetes/troubleshoot/install
-  - /docs/platforms/kubernetes/troubleshoot/volumes
-  - /docs/platforms/openshift/troubleshoot
-  - /docs/platforms/openshift/troubleshoot/install
-  - /docs/platforms/openshift/troubleshoot/volumes
-  - /docs/platforms/rancher/troubleshoot
-  - /docs/platforms/rancher/troubleshoot/install
-  - /docs/platforms/rancher/troubleshoot/volumes
-  - /docs/platforms/dockerce/troubleshoot
-  - /docs/platforms/dockerce/troubleshoot/install
-  - /docs/platforms/dockerce/troubleshoot/volumes
----
+# Troubleshooting
 
 This section is aimed to help you troubleshoot issues in your cluster, whether
 they are related to the Ondat installation, integration with
@@ -22,8 +6,7 @@ orchestrators or common misconfigurations.
 
 ## Tools
 
-To be able to troubleshoot issues the [Ondat
-CLI](https://github.com/storageos/go-cli) is required.
+To be able to troubleshoot issues the [Ondat CLI](../reference/cli/_index.md) is required.
 
 {{% include "content/troubleshoot/mount-in-pod-stat.md" %}}
 {{% include "content/troubleshoot/pvc-pending-fail-to-dial.md" %}}
@@ -40,5 +23,5 @@ CLI](https://github.com/storageos/go-cli) is required.
 ## Getting Help
 
 If our troubleshooting guides do not help resolve your issue, see our
-[support section]({{< ref "docs/support.md" >}}) for details on how
+[support section](../support.md) for details on how
 to get in touch with us.

@@ -1,7 +1,4 @@
----
-title: TRIM
-linkTitle: TRIM
----
+# TRIM
 
 Ondat volumes support TRIM/Unmap by default for all uncompressed volumes.
 Ondat creates uncompressed volumes by default so all of these volumes will

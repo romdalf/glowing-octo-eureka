@@ -1,6 +1,4 @@
----
-title: Volume Resize
----
+# Volume Resize
 
 Ondat supports offline resize of volumes, either through editing a PVC
 storage request, or by updating the volume config via the CLI or UI. A volume
@@ -10,8 +8,7 @@ requires that any pods using a volume be scaled down for the resize to take
 place.
 
 Note, that Ondat only supports increasing volume size. For more
-information on how the resize works, see our [Resize
-Concepts]({{< ref "docs/concepts/volumes#volume-resize" >}} "Resize Concepts") page.
+information on how the resize works, see our [Resize Concepts](../concepts/volumes#volume-resize) page.
 
 
 ### Resizing a Volume
@@ -68,4 +65,4 @@ Volume pvc-a47cfa03-cc92-4ec9-84ab-00e5516c64fa (925e667f-91d3-465a-9391-8fdb56d
 To resize a volume using the Ondat UI, navigate to the volumes section and
 click the edit pencil in order to update the volume config.
 
-![Ondat Resize](/images/docs/operations/resize/resize-vol.png)
+![Ondat Resize](../assets/images/operations/resize/resize-vol.png)

@@ -1,8 +1,4 @@
----
-title: Policies
-aliases:
-  - /ui-help/policies/learn-more # url referenced from UI
----
+# Policies
 
 Policies control access to Ondat namespaces. Policies can be
 configured at the group or user level so access can be controlled granularly.
@@ -19,8 +15,8 @@ be applied to the default namespace.
 
 To start creating policies, at least one custom namespace and user are
 required. For more information on how to create namespaces, see our
-[Namespace guide]({{< ref "docs/operations/namespaces.md" >}}), and for users see
-our [Users CLI reference]({{< ref "docs/reference/cli/create.md" >}}).
+[Namespace guide](../operations/namespaces.md), and for users see
+our [Users CLI reference](../reference/cli/create.md).
 
 In order to create a policy navigate to "Policies" in the GUI and select
 "Create Policy". A policy controls access to a variety of Ondat resources

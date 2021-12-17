@@ -1,12 +1,8 @@
----
-title: User Management
-aliases:
-  - /ui-help/users/learn-more # url referenced from UI
----
+# User Management
 
 An Ondat cluster admin can create users and restrict their access rights to
-Ondat [namespaces]({{< ref "docs/operations/namespaces.md" >}}) using
-[policies]({{< ref "docs/operations/policies.md" >}}).
+Ondat [namespaces](../operations/namespaces.md) using
+[policies](../operations/policies.md).
 
 >Note: Users are created with access to the default namespace. This access is
 >only revoked when a policy is created for the user or their group. 

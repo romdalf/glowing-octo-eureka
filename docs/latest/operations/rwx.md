@@ -1,12 +1,8 @@
----
-title: ReadWriteMany
-linkTitle: ReadWriteMany
----
+# ReadWriteMany
 
 > Note: Ondat Project edition is required to create RWX Volumes.
 
-Ondat supports ReadWriteMany (RWX) [access
-mode](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes)
+Ondat supports ReadWriteMany (RWX) [access mode](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes)
 Persistent Volumes. A RWX PVC can be used simultaneously by many Pods in the
 same Kubernetes namespace for read and write operations.
 
@@ -14,14 +10,13 @@ Ondat RWX Volumes are based on a shared filesystem.
 
 To create a ReadWriteMany (RWX) volume with Ondat, create a Persistent
 Volume Claim (PVC) with an access mode of `ReadWriteMany` (see the
-[First PVC]({{< ref"docs/operations/firstpvc.md" >}}) documentation for
+[First PVC](../operations/firstpvc.md) documentation for
 examples of creating standard PVCs with Ondat).
 
 The following YAML manifest files provide an example:
 
 A 5Gi PVC with the Ondat `storageClassName` of `storageos`, with an
 `accessMode` of `ReadWriteMany`:
-
 
 ```yaml
 apiVersion: v1

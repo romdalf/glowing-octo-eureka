@@ -1,3 +1,5 @@
+# changelog
+
 ## structure 
 - ~~created an archive, previous, latest, next folders~~
 - ~~copy 2.5 in latest~~
@@ -151,5 +153,36 @@ don't let people benchmark a sub-optimal setup!
 - ~~modify link to self-eval.md~~
 - ~~modify image links~~
 - ~~modify link to reference/cli~~
-## managing-host-storage.md
-
+### managing-host-storage.md
+### namespaces.md
+- no reference to concepts
+### policies.md
+- ~~modify link to operations/namespaces.md~~
+- ~~modify link to reference/cli/create.md~~
+### resize.md
+- ~~modify link to concepts/volumes~~
+- ~~modify image link~~
+### rwx.md
+- ~~modify link to operations/firstpvc.md~~
+- add reference to firewall for NFS ganesha
+### storageclasses.md
+- update git reference to point to ondat
+- ~~modify link to reference/tap.md~~
+- ~~modify link to operations/failure-modes.md~~
+### tap.md
+### trim.md 
+- add TRIM definition
+### troubleshooting.md
+- collections of includes to breakdown into pages
+- ~~modify the link to github cli to internal doc cli~~
+- ~~modify link to support.md~~
+### uninstall.md
+- full revamp for 2.5
+### upgrade.md
+- check validity of the 2.3 requirements
+- page should be part of the release notes
+- replace container image version by "latest" 
+- check the need to add a "backup etcd" reco
+### users.md
+- ~~modify link to operations/namespaces.md~~
+- ~~modify link to operations/policies.md~~˜

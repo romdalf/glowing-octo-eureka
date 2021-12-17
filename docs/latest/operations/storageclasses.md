@@ -1,7 +1,4 @@
----
-linkTitle: StorageClasses
-title: Kubernetes StorageClasses
----
+# StorageClasses
 
 [StorageClasses](https://kubernetes.io/docs/concepts/storage/storage-classes/)
 in Kubernetes are used to link PVCs with a backend storage provisioner - for
@@ -59,7 +56,6 @@ parameters:
   csi.storage.k8s.io/secret-namespace: storageos
 ```
 
-
 That StorageClass can be used by a PVC:
 
 ```yaml
@@ -87,9 +83,8 @@ StorageClass. The PVC definition takes precedence over the StorageClass.
 
 ### Topology Aware Storage Class
 
-StorageClass that enables [Topology Aware Placement]({{< ref
-"docs/reference/tap.md"  >}}) and replication with [soft mode]({{< ref
-"docs/operations/failure-modes.md" >}})
+StorageClass that enables [Topology Aware Placement](../reference/tap.md) 
+and replication with [soft mode](../operations/failure-modes.md):
 
 ```yaml
 apiVersion: storage.k8s.io/v1
