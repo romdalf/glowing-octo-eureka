@@ -1,12 +1,4 @@
----
-title: "Use Cases: Install applications on Kubernetes with Ondat"
-linkTitle: Use Cases
-weight: 500
-aliases:
-  - /docs/usecases/kubernetes/
-description: >
-  Examples on how to deploy stateful applications into a Kubernetes cluster using Ondat to persist data.
----
+# Use Cases: Install applications on Kubernetes with Ondat"
 
 Ondat can be used to provide permanent storage for other applications
 running in [Kubernetes](https://kubernetes.io) or other Orchestrators that are

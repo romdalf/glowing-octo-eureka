@@ -1,11 +1,6 @@
----
-title: Jenkins
-linkTitle: Jenkins
-aliases:
-  - /docs/usecases/kubernetes/jenkins
----
+# Jenkins
 
-<img src="/images/docs/explore/jenkins.png" width="125" height="125">
+![jenkinslog](../assets/images/explore/jenkins.png)
 
 This example shows an example of how to deploy Jenkins on Kubernetes with a
 Ondat persistent volume being mounted on `/var/jenkins_home`. Deploying
@@ -14,16 +9,13 @@ multiple build pods at once to allow concurrent builds of different projects.
 Secondly Jenkins configuration is on a PersistentVolume so even if the Jenkins
 pod is rescheduled the configuration will persist. 
 
-Using Ondat [ volume
-replicas ]( https://docs.storageos.com/docs/concepts/replication ) allows for
+Using Ondat [volume replicas](../concepts/replication.md) allows for
 failure of nodes holding the PersistentVolume without interrupting Jenkins.
-Lastly by enabling [ Ondat
-fencing ]( https://docs.storageos.com/docs/concepts/fencing ) Jenkins time to
+Lastly by enabling Ondat [fencing](../concepts/fencing.md) Jenkins time to
 recover, in case of node failures, is greatly reduced.
 
 Before you start, ensure you have Ondat installed and ready on a Kubernetes
-cluster. [See our guide on how to install Ondat on Kubernetes for more
-information]({{< ref "docs/install/kubernetes.md" >}})
+cluster. [See our guide on how to install Ondat on Kubernetes for more information](../install/kubernetes.md)
 
 ## Deploying Jenkins on Kubernetes
 

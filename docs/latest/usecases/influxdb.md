@@ -1,17 +1,12 @@
----
-title: InfluxDB
-linkTitle: InfluxDB
-aliases:
-  - /docs/usecases/kubernetes/influxdb
----
+# InfluxDB
 
-<img src="/images/docs/explore/influxdb.png" width="125" height="125">
+![influxdblogo](../assets/images/explore/influxdb.png)
 
 InfluxDB is a popular open source time series database application optimised
 for managing datasets consisting of many small measurements. Its advantages
 include the ability to handle very high write and query loads. Its uses include monitoring, analytics and the recording and analysis of data from sensors.
 
-Before you start, ensure you have Ondat installed and ready on a Kubernetes cluster. [See our guide on how to install Ondat on Kubernetes for more information]({{< ref "docs/install/kubernetes.md" >}}).
+Before you start, ensure you have Ondat installed and ready on a Kubernetes cluster. [See our guide on how to install Ondat on Kubernetes for more information](../install/kubernetes.md).
 
 ## Deploying InfluxDB on Kubernetes
 

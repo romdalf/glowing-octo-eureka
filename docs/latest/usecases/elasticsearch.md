@@ -1,11 +1,6 @@
----
-title: "Elasticsearch"
-linkTitle: Elasticsearch
-aliases:
-  - /docs/usecases/kubernetes/elasticsearch
----
+# Elasticsearch
 
-<img src="/images/docs/explore/elasticsearch.png" width="125" height="125">
+![elasticlogo](../assets/images/explore/elasticsearch.png)
 
 Elasticsearch is a distributed, RESTful search and analytics engine, most
 popularly used to aggregate logs, but also to serve as a search backend to a
@@ -25,7 +20,7 @@ replication is required.
 
 Before you start, ensure you have Ondat installed and ready on a Kubernetes
 cluster. [See our guide on how to install Ondat on Kubernetes for more
-information]({{< ref "docs/install/kubernetes.md" >}}).
+information](../install/kubernetes.md).
 
 ## Deploying Elasticsearch on Kubernetes
 
@@ -180,4 +175,4 @@ by Prometheus on port 9108
 This is enabled by default, and should work with the default Prometheus install
 via Helm. If you're using the Prometheus service monitors, you can monitor
 this installation by creating a monitor for the `es-exporter` service. For an
-example of how this is done to monitor Ondat, please see [prometheus-setup](/docs/operations/monitoring/prometheus-setup).
+example of how this is done to monitor Ondat, please see [prometheus-setup](../operations/monitoring/prometheus-setup).

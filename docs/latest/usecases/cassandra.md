@@ -1,11 +1,6 @@
----
-title: "Cassandra"
-linkTitle: Cassandra
-aliases:
-  - /docs/usecases/kubernetes/cassandra
----
+# Cassandra
 
-<img src="/images/docs/explore/cassandralogo.png" width="125" height="125">
+![cassandra log](../assets/images/explore/cassandralogo.png)
 
 Cassandra is a popular distributed NoSQL open source database.
 
@@ -22,7 +17,7 @@ is required.
 
 Before you start, ensure you have Ondat installed and ready on a Kubernetes
 cluster. [See our guide on how to install Ondat on Kubernetes for more
-information]({{< ref "docs/install/kubernetes.md" >}}).
+information](../install/kubernetes.md).
 
 ## Deploying Cassandra on Kubernetes
 

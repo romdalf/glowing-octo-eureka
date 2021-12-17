@@ -1,11 +1,6 @@
----
-title: Kafka
-linkTitle: Kafka
-aliases:
-  - /docs/usecases/kubernetes/kafka
----
+# Kafka
 
-<img src="/images/docs/explore/kafka.png" width="125" height="125">
+![kafkalogo](../assets/images/explore/kafka.png)
 
 Kafka is a popular stream processing platform combining features from pub/sub
 and traditional queues.
@@ -24,7 +19,7 @@ is required.
 
 Before you start, ensure you have Ondat installed and ready on a Kubernetes
 cluster. [See our guide on how to install Ondat on Kubernetes for more
-information]({{< ref "docs/install/kubernetes.md" >}}).
+information](../install/kubernetes.md).
 
 
 ## Prerequisites
@@ -32,9 +27,9 @@ information]({{< ref "docs/install/kubernetes.md" >}}).
 - Apache Zookeeper is required by Kafka to function; we assume it to already
 exist and be accessible within the Kubernetes cluster as `zookeeper`, see how
 to run Zookeeper with Ondat
-[here]({{< ref "docs/usecases/zookeeper.md" >}})
+[here](../usecases/zookeeper.md)
 - Ondat is assumed to have been installed; please check for the latest
-available version [here]({{< ref "docs/reference/release_notes.md" >}})
+available version [here](../reference/release_notes.md)
 - Kafka pods require 1536 MB of memory for successful scheduling
 
 ### Helm

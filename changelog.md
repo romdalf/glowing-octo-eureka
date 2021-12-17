@@ -383,3 +383,38 @@ don't let people benchmark a sub-optimal setup!
 - ~~modify link to reference/cluster-operator/configuration.md~~
 ### tolerations.nd
 - ~~modify and fix reference/cluster-operator/examples.md#specifying-custom-tolerations~~
+
+## usecases
+### _index.md
+### cassandra.md
+- ~~modify image links~~
+- check if there is trademark and copyright to be added
+- ~~modify link to install/kubernetes.md~~
+- update git reference from storageos to ondat 
+### elasticsearch.md
+- ~~modify image links~~
+- check if there is trademark and copyright to be added
+- ~~modify link to install/kubernetes.md~~
+- update git reference from storageos to ondat 
+- dead link operations/monitoring/prometheus-setup
+### influxdb.md
+- ~~modify image links~~
+- check if there is trademark and copyright to be added
+- ~~modify link to install/kubernetes.md~~
+- update git reference from storageos to ondat
+### jenkins.md
+- ~~modify image links~~
+- check if there is trademark and copyright to be added
+- ~~update old external links to internal ones to doc~~
+- update git reference from storageos to ondat
+### kafka.md
+- ~~modify image links~~
+- ~~modify link to install/kubernetes.md~~
+- ~~modify link to usecases/zookeeper.md~~
+- ~~modify link to reference/release_notes.md~~
+- update git reference from storageos to ondat
+### kubvirt.md
+- ~~modify image links~~
+
+
+

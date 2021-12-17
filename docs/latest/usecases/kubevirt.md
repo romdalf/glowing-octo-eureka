@@ -1,11 +1,6 @@
----
-title: Kubevirt
-linkTitle: Kubevirt
-aliases:
-  - /docs/usecases/kubernetes/kubevirt
----
+# Kubevirt
 
-# ![image](/images/docs/explore/kubevirt.png)
+![image](../assets/images/explore/kubevirt.png)
 
 [Kubevirt](https://kubevirt.io) is a CNCF sandbox project that allows the
 running of virtual machines (VMs) in Kubernetes pods.
