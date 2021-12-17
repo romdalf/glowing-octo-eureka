@@ -308,3 +308,10 @@ don't let people benchmark a sub-optimal setup!
 - update git reference from storageos to ondat 
 - use git tag latest instead of version
 - reference to storage-operator not relevant in 2.5
+### scheduler
+#### _index.md
+- ~~modify link to reference/scheduler/admission-controller.md~~
+- update includess with content
+#### admission-controller.md
+- ~~modify link to reference/scheduler/_index.md~~
+- update includess with content

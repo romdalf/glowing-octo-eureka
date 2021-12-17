@@ -1,7 +1,4 @@
----
-title: Ondat Scheduler
-linkTitle: Scheduler
----
+# Ondat Scheduler
 
 Ondat has the capacity to influence Kubernetes Pod placement decisions to
 ensure that Pods are scheduled on the same nodes as their data. This
@@ -15,8 +12,7 @@ network traffic and associated latency. Read operations are served locally and
 writes require fewer round trips to the replicas of the volume.
 
 Ondat automatically enables the use of a custom scheduler for any Pod
-using Ondat Volumes. Checkout the [Admission Controller reference](
-{{< ref "docs/reference/scheduler/admission-controller.md" >}}) for more
+using Ondat Volumes. Checkout the [Admission Controller reference](../../reference/scheduler/admission-controller.md) for more
 information.
 
 
