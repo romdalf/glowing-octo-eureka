@@ -1,15 +1,12 @@
----
-title: Redis
-linkTitle: Redis
----
+# Redis
 
-<img src="/images/docs/explore/redis.png" width="125" height="125">
+![redislogo](../assets/images/explore/redis.png)
 
 Redis is a popular networked, in-memory, key-value data store with optional durability to disk.
 
 Before you start, ensure you have Ondat installed and ready on a Kubernetes
 cluster. [See our guide on how to install Ondat on Kubernetes for more
-information]({{< ref "docs/install/kubernetes.md" >}}).
+information](../install/kubernetes.md).
 
 ## Deploying Redis on Kubernetes
 

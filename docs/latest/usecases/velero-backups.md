@@ -1,9 +1,4 @@
----
-title: "Velero Backups"
-linkTitle: Velero Backups
-aliases:
-  - /docs/usecases/kubernetes/velero
----
+# Velero Backups
 
 ## Using Velero to backup your Ondat volumes
 
@@ -17,11 +12,11 @@ Velero consists of the following components:
 
 Here's a diagram on how Velero backups work:
 
-![image](/images/docs/concepts/velero-backup.jpg)
+![image](../assets/images/concepts/velero-backup.jpg)
 
 And here's how Velero restores work:
 
-<img src="/images/docs/concepts/velero-restore.jpg" width="600" height="1000"> 
+![restore](../assets/images/concepts/velero-restore.jpg)
 
 In our case, we will use MinIO in the Kubernetes cluster as the "cloud
 provider" pictured in the backup diagram. MinIO is an object store that uses

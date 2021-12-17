@@ -385,6 +385,7 @@ don't let people benchmark a sub-optimal setup!
 - ~~modify and fix reference/cluster-operator/examples.md#specifying-custom-tolerations~~
 
 ## usecases
+- replaces all the links to install with prereqs
 ### _index.md
 ### cassandra.md
 - ~~modify image links~~
@@ -415,6 +416,54 @@ don't let people benchmark a sub-optimal setup!
 - update git reference from storageos to ondat
 ### kubvirt.md
 - ~~modify image links~~
-
+- check if there is trademark and copyright to be added
+- ~~update old external links to internal ones to doc~~
+- ~~modify link to install/kubernetes.md~~
+- update git reference from storageos to ondat
+### mssql.md
+- ~~modify image links~~
+- check if there is trademark and copyright to be added
+- ~~modify link to install/kubernetes.md~~
+- update git reference from storageos to ondat
+### mysql.md
+- ~~modify image links~~
+- check if there is trademark and copyright to be added
+- ~~modify link to install/kubernetes.md~~
+- update git reference from storageos to ondat
+### nginx.md
+- ~~modify image links~~
+- check if there is trademark and copyright to be added
+- ~~modify link to install/kubernetes.md~~
+- update git reference from storageos to ondat
+### postgres.md
+- ~~modify image links~~
+- check if there is trademark and copyright to be added
+- ~~modify link to install/kubernetes.md~~
+- update git reference from storageos to ondat
+### prometheus.md
+- ~~modify image links~~
+- check if there is trademark and copyright to be added
+- ~~modify link to install/kubernetes.md~~
+- update git reference from storageos to ondat
+- update dead link to coreos/operators/prometheus
+### redis.md
+- ~~modify image links~~
+- check if there is trademark and copyright to be added
+- ~~modify link to install/kubernetes.md~~
+- update git reference from storageos to ondat
+### sidecar-backup.md
+- check if there is trademark and copyright to be added
+- ~~modify link to install/kubernetes.md~~
+- update git reference from storageos to ondat
+### velero-backups.md
+- check if there is trademark and copyright to be added
+- ~~modify image links~~
+- update includes content
+### zookeeper.md
+- ~~modify image links~~
+- check if there is trademark and copyright to be added
+- ~~modify link to install/kubernetes.md~~
+- update git reference from storageos to ondat
+- ~~modify link to reference/release_notes.md~~
 
 

@@ -1,18 +1,13 @@
----
-title: MySQL
-linkTitle: MySQL
-aliases:
-  - /docs/usecases/kubernetes/mysql
----
+# MySQL
 
-# ![image](/images/docs/explore/mysqllogo.png)
+![image](../assets/images/explore/mysqllogo.png)
 
 MySQL is a popular SQL open source database for a wide range of popular
 web-based applications including WordPress.
 
 Before you start, ensure you have Ondat installed and ready on a Kubernetes
 cluster. [See our guide on how to install Ondat on Kubernetes for more
-information]({{< ref "docs/install/kubernetes.md" >}}).
+information](install/kubernetes.md).
 
 ## Deploying MySQL on Kubernetes
 

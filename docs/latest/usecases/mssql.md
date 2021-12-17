@@ -1,16 +1,13 @@
----
-title: "MS SQL"
-linkTitle: MS SQL
----
+# MS SQL
 
-<img src="/images/docs/explore/mssql.png" width="125" height="125">
+![mssqllogo](../assets/images/explore/mssql.png)
 
 Beginning with Microsoft SQL Server 2017, Microsoft has supported MSSQL on
 linux.
 
 Before you start, ensure you have Ondat installed and ready on a Kubernetes
 cluster. [See our guide on how to install Ondat on Kubernetes for more
-information]({{< ref "docs/install/kubernetes.md" >}}).
+information](../install/kubernetes.md).
 
 ## Deploying MS SQL on Kubernetes
 

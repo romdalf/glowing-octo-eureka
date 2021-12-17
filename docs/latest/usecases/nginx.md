@@ -1,9 +1,6 @@
----
-title: Nginx
-linkTitle: Nginx
----
+# Nginx
 
-<img src="/images/docs/explore/nginx.png" width="125" height="125">
+![nginxlogo](../assets/images/explore/nginx.png)
 
 [Nginx](https://www.nginx.com/) is a popular web server that can be used as a reverse proxy, load
 balancer or even as a
@@ -11,7 +8,7 @@ balancer or even as a
 
 Before you start, ensure you have Ondat installed and ready on a Kubernetes
 cluster. [See our guide on how to install Ondat on Kubernetes for more
-information]({{< ref "docs/install/kubernetes.md" >}}).
+information](../install/kubernetes.md).
 
 ## Deploying Nginx on Kubernetes
 

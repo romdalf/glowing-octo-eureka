@@ -1,9 +1,6 @@
----
-title: Zookeeper
-linkTitle: Zookeeper
----
+# Zookeeper
 
-<img src="/images/docs/explore/zookeeper.png" width="125" height="125">
+![zookeeperlog](../assets/images/explore/zookeeper.png)
 
 ZooKeeper is a centralized service for maintaining configuration information,
 naming, providing distributed synchronization, and providing group services.
@@ -21,14 +18,14 @@ careful consideration of whether to allow Ondat or Zookeeper to handle replicati
 
 Before you start, ensure you have Ondat installed and ready on a Kubernetes
 cluster. [See our guide on how to install Ondat on Kubernetes for more
-information]({{< ref "docs/install/kubernetes.md" >}}).
+information](../install/kubernetes.md).
 
 ## Deploying Zookeeper on Kubernetes
 
 ### Pre-requisites
 
 - Ondat is assumed to have been installed; please check for the latest
-available version [here]({{< ref "docs/reference/release_notes.md" >}}).
+available version [here](../reference/release_notes.md).
 
 ### Helm
 

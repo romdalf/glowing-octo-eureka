@@ -1,12 +1,4 @@
----
-title: "Sidecar Backups"
-linkTitle: Sidecar Backups
-aliases:
-  - /docs/usecases/backups/
-  - /docs/usecases/sidecar-backups/
-description: >
-    Backing up files from Ondat volumes
----
+# Sidecar Backups
 
 In this example use case we provide three different strategies for accessing
 files that have been written to a Ondat  persistent volume.
@@ -20,7 +12,7 @@ via SFTP.
 
 The files create a stateful set that can be used *AFTER* a Ondat cluster
 has been created. [See our guide on how to install Ondat on Kubernetes for more
-information]({{< ref "docs/install/kubernetes.md" >}}).
+information](../install/kubernetes.md).
 
 
 ## Clone Repository

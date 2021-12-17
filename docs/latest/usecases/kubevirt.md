@@ -9,7 +9,7 @@ Deploying Kubevirt using Ondat offers multiple benefits. Kubevirt can spin
 up VMs as Kubernetes pods, using images on Ondat persistent volumes. Doing
 this allows the VM data to persist through restarts and rescheduling. Using
 Ondat [volume
-replicas](https://docs.storageos.com/docs/concepts/replication) also allows for
+replicas](../concepts/replication.md) also allows for
 failure of nodes holding the PersistentVolume without interrupting the VM
 running off the PersistentVolume. [Containerized Data Importer
 (CDI)](https://github.com/kubevirt/containerized-data-importer) can also be
@@ -24,7 +24,7 @@ launch a shell inside the KubeVirt VM that's running as a Kubernetes pod.
 
 Before you start, ensure you have Ondat installed and ready on a Kubernetes
 cluster. [See our guide on how to install Ondat on Kubernetes for more
-information]({{< ref "docs/install/kubernetes.md" >}}).
+information](../install/kubernetes.md).
 
 ## Prerequisites
 

@@ -1,17 +1,13 @@
----
-title: Prometheus
-linkTitle: Prometheus
-aliases:
-  - /docs/usecases/kubernetes/prometheus
----
-<img src="/images/docs/explore/prom.png" width="125" height="125">
+# Prometheus
+
+![prometheuslogo](../assets/images/explore/prom.png)
 
 Prometheus is a popular application used for event monitoring and alerting in 
 Kubernetes.
 
 Before you start, ensure you have Ondat installed and ready on a Kubernetes
 cluster. [See our guide on how to install Ondat on Kubernetes for more
-information]({{< ref "docs/install/kubernetes.md" >}}).
+information](../install/kubernetes.md).
 
 ## Deploying Prometheus on Kubernetes
 

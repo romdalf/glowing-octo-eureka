@@ -1,11 +1,6 @@
----
-title: PostgreSQL
-linkTitle: PostgreSQL
-aliases:
-  - /docs/usecases/kubernetes/postgres
----
+# PostgreSQL
 
-<img src="/images/docs/explore/postgres.png" width="125" height="125">
+![postgresqllogo](../assets/images/explore/postgres.png)
 
 PostgreSQL or "Postgres" is an open source object-relational database management
 system (ORDBMS).
@@ -16,8 +11,7 @@ with many concurrent users.
 
 Before you start, ensure you have Ondat installed and ready on a Kubernetes
 cluster. If you need to setup Ondat on Kubernetes then please see our guide
-to [installing Ondat on Kubernetes]({% link
-"docs/install/kubernetes.md" >}}).
+to [installing Ondat on Kubernetes](../install/kubernetes.md).
 
 ## Deploying PostgreSQL on Kubernetes
 
