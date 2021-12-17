@@ -1,21 +1,18 @@
----
-title: Release notes
----
+# Release notes
 
 We recommend always using "tagged" versions of Ondat rather than "latest",
 and to perform upgrades only after reading the release notes.
 
 The latest tagged release is `{{< param latest_node_version >}}`. For
 installation instructions please see our
-[Install]({{< ref "docs/reference/cluster-operator/install.md">}}) page.
+[Install](../reference/cluster-operator/install.md) page.
 
 The latest CLI release is `{{< param latest_cli_version >}}`, available from
 [Github](https://github.com/storageos/go-cli/releases).
 
 # Upgrading
 
-To upgrade from version 1.x to 2.x, please contact [support]({{< ref
-"docs/support.md" >}}) for assistance.
+To upgrade from version 1.x to 2.x, please contact [support](../support.md) for assistance.
 
 ## 2.5 - Released 2021-12-06
 
@@ -55,7 +52,7 @@ Dataplane:
 
 Control Plane:
 
-- [Topology-Aware Placement]({{< ref "docs/reference/tap.md" >}}) is a feature
+- [Topology-Aware Placement](../reference/tap.md) is a feature
   that enforces placement of data across failure domains to guarantee high
   availability.
 - Track logs from control plane to data plane with extra details.
@@ -64,7 +61,7 @@ Control Plane:
 
 Kubernetes:
 
-- New [kubectl plugin]({{< ref "docs/reference/kubectl-plugin.md" >}}) to
+- New [kubectl plugin](../reference/kubectl-plugin.md) to
   manage Ondat.
 - Upgrades to the operator and improved development speed - StorageOS cluster
   status now reflects cluster deployment status. Users can now change log-level
@@ -79,7 +76,7 @@ Kubernetes:
 - controlplane: Fix an issue with timeouts when opening gRPC connections to
   other nodes in the cluster.
 - controlplane: Changes to GUI licensing workflow - See our [Licensing
-  page]({{< ref "docs/reference/licence.md" >}})
+  page](../reference/licence.md)
 - dataplane: Fix an issue where failed IO network connections could be
   erroneously restarted while we are trying to shutdown.
 - k8s: Leader election requires ability to patch events.
@@ -118,12 +115,11 @@ Kubernetes:
 
 ## v2.4.0 - Released 2021-05-27
 
-This release adds production-grade [encryption at rest ]({{< ref
-"docs/reference/encryption.md">}}) for Ondat volumes, as well as:
-* [Fencing]({{< ref "docs/concepts/fencing.md">}})
-* [TRIM]({{< ref "docs/operations/trim.md">}})
-* [Failure modes]({{< ref "docs/concepts/replication.md#failure-modes">}})
-* [Kubernetes object sync]({{< ref "docs/reference/kubernetes-object-sync">}})
+This release adds production-grade [encryption at rest ](../reference/encryption.md) for Ondat volumes, as well as:
+* [Fencing](../concepts/fencing.md)
+* [TRIM](../operations/trim.md)
+* [Failure modes](../concepts/replication.md#failure-modes)
+* [Kubernetes object sync](../reference/kubernetes-object-sync)
 
 Note: v2.4.0 _requires_ Kubernetes 1.17 or newer.
 ### New
@@ -368,7 +364,7 @@ technology preview in v1.
 ### New
 
 - Adds support for `ReadWriteMany` shared volumes.  See
-  [ReadWriteMany]({{< ref "docs/concepts/rwx.md" >}}).
+  [ReadWriteMany](../concepts/rwx.md).
 - Adds `api-manager` deployment to support shared volumes.  See [the api
   manager](https://github.com/storageos/api-manager) Github repository for more
   information.
@@ -418,7 +414,7 @@ technology preview in v1.
 - init: Checks the effective maximum PID limit and warns if less than the
   Ondat recommended PID limit (32,768).  CRIO-based distributions such as
   Openshift have a much lower default value (1024).  Consult
-  [prerequisites]({{< ref "docs/prerequisites/pidlimits.md" >}}) for more
+  [prerequisites](../prerequisites/pidlimits.md) for more
   information.
 
 ### Fixed
@@ -443,8 +439,8 @@ improvements across the board. Of particular note:
 - I/O for large block sizes (128K) has improved by up to 353%
 
 We are extremely proud of our performance and we love to talk about it. Have a
-look at the [Benchmarking]({{< ref "docs/self-eval.md"
->}}#Benchmarking) section of the self-evaluation guide and consider sharing
+look at the [Benchmarking](../self-eval.md#Benchmarking) section of the 
+self-evaluation guide and consider sharing
 your results. Our PRE engineers are available to discuss in our [slack
 channel](https://storageos.slack.com).
 
@@ -460,7 +456,7 @@ channel](https://storageos.slack.com).
 
 - On-disk compression is now disabled by default as in most scenarios this
   offers better performance. To enable on-disk compression for a specific
-  workload, see [compression]({{< ref "docs/concepts/compression.md">}}).
+  workload, see [compression](../concepts/compression.md).
 
 ### Improved
 
@@ -515,7 +511,7 @@ channel](https://storageos.slack.com).
 - csi: Volume expansion now supported in offline mode. To expand a volume, stop
   any workloads accessing the volume, then edit the PVC to increase the
   capacity. For more information, see our [Volume Resize]({{< ref
-  "docs/operations/resize.md" >}}) operations page and the [`CSI Volume
+  "docs/operations/resize.md) operations page and the [`CSI Volume
   Expansion`](https://kubernetes-csi.github.io/docs/volume-expansion.html)
   page.
 - api: Volume configuration including replica count can now be updated while

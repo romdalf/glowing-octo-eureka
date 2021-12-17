@@ -1,6 +1,4 @@
----
-title: Contributing to the docs
----
+# Contributing to the docs
 
 We are always looking to improve our documentation. If you like to help people
 and can write, read on for the process for submitting your contributions. If your

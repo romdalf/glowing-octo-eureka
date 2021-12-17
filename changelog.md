@@ -6,6 +6,7 @@
 - revisit the multiple link between concept, reference and operation 
 maybe into a top level topic with a breakdown in 1 or multiple pages
 - reduce folder structure to 1 level deep max
+- reduce the million links by a good structure!
 
 ## support.md
 - 2 links to website support | dead
@@ -311,7 +312,74 @@ don't let people benchmark a sub-optimal setup!
 ### scheduler
 #### _index.md
 - ~~modify link to reference/scheduler/admission-controller.md~~
-- update includess with content
+- update includes with content
 #### admission-controller.md
 - ~~modify link to reference/scheduler/_index.md~~
-- update includess with content
+- update includes with content
+### api.md
+- to review how to approach this
+### contributing.md
+- update git reference from storageos to ondat 
+- use git tag latest instead of version
+- to review with the contribution pillars 
+### encryption.md
+- ~~modify link to concepts/volumes.md~~
+- ~~modify link to operations/encryption.md~~
+- ~~modify link to references/labels.md~~
+- update email address (to define) 
+### filesystems.md
+- ~~modify link to concepts/volumes.md~~
+- ~~modify image links
+### init-container.md
+- ~~modify link to reference/cluster-operator~~
+- update git reference from storageos to ondat 
+- use git tag latest instead of version
+- dbupgrade link is dead
+### kubectl-plugin.md
+- update includes with content
+- remove versioning
+- missing the plugin MAN 
+### kubernetes-object-sync.md
+- ~~modify link to concepts/components.md~~
+- ~~modify link to operations/storageclasses.md~~
+- ~~modify link to concepts/volumes.md~~
+- update git reference from storageos to ondat 
+- use git tag latest instead of version
+- ~~modify link to concepts/nodes.md~~
+### labels.md
+- ~~modify link to operations/fencing.md~~
+### licence.md
+- ~~modify link to operations/licensing.md~~
+- to consolidate with licensing page
+### open_source_attribution.md
+### release_notes.md
+- only release notes of current major version 2.x should be in, not previous
+- include a deprecated section
+- update git reference from storageos to ondat 
+- use git tag latest instead of version
+- ~~modify link to support.md~~
+- ~~modify link to reference/tap.md~~
+- ~~modify link to reference/kubectl-plugin.md~~
+- ~~modify link to reference/licence.md~~
+- ~~modify link to reference/encryption.md~~
+- ~~modify link to concepts/fencing.md~~
+- ~~modify link to concepts/replication.md#failure-modes~~
+- ~~modify link to reference/kubernetes-object-sync~~
+- ~~modify link to concepts/rwx.md~~
+- ~~modify link to prerequisites/pidlimits.md~~
+- ~~modify link to self-eval.md#Benchmarking~~
+- ~~modify link to concepts/compression.md~~
+- update slack URL
+- update blog post URL release of 2.0
+### resource_requests_and_limits.md
+- ~~modify link to reference/cluster-operator/examples.md~~
+### tap.md
+- ~~modify image links~~
+- ~~modify link to operations/tap.md~~
+- ~~modify link to concepts/replication.md#failure-modes~~
+- diagram to be updated
+### telemetry.md
+- add some more details to sentry from a security perspective
+- ~~modify link to reference/cluster-operator/configuration.md~~
+### tolerations.nd
+- ~~modify and fix reference/cluster-operator/examples.md#specifying-custom-tolerations~~

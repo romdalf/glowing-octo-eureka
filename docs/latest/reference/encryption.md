@@ -1,17 +1,14 @@
----
-title: Encryption
----
+# Encryption
 
 Ondat supports encryption for data-at-rest and data-in-transit.
 
 Data-in-transit is data as it is travelling between nodes. It is encrypted by
-default with mTLS. Data-at-rest is the data stored in your volumes as [ blob
-files]({{< ref "docs/concepts/volumes.md" >}}). Encryption of these blob files
+default with mTLS. Data-at-rest is the data stored in your volumes as [blob files](../concepts/volumes.md). Encryption of these blob files
 is optional and can be enabled by adding a label to your volume definitions
 before they're provisioned.
 
 For information on how to enable encryption on your volumes, please see our
-[Encryption Operations]({{< ref "docs/operations/encryption.md" >}}) page.
+[Encryption Operations](../operations/encryption.md) page.
 
 ## How volumes are encrypted
 
@@ -23,8 +20,7 @@ to encrypted volumes.
 
 ## Encryption Key Generation
 
-On PVC creation, [if encryption is enabled]({{< ref
-"docs/reference/labels.md#storageos-volume-labels" >}}), Ondat will
+On PVC creation, [if encryption is enabled](../reference/labels.md#storageos-volume-labels), Ondat will
 automatically generate up to two keys as Kubernetes secrets. Both keys are
 stored in the same namespace as the PVC.
 
@@ -95,7 +91,7 @@ with Ondat encryption key management using the standard Kubernetes API and
 Kubernetes KMS provider framework. The below figure provides an overview of the
 process.
 
-![KMS Key Management](/images/docs/gui-v2/kms-key-management.png)
+![KMS Key Management](../assets/images/gui-v2/kms-key-management.png)
 
 1. The KMS plugin is deployed within the Kubernetes cluster.
 2. The KMS plugin is configured to act as a broker between the Kubernetes API

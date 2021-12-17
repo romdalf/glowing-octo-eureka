@@ -1,6 +1,4 @@
----
-title: Topology-Aware Placement
----
+# Topology-Aware Placement
 
 Ondat Topology-Aware Placement is a feature that enforces placement of data
 across failure domains to guarantee high availability. Topology-Aware Placement
@@ -20,7 +18,7 @@ TAP can cause following problems:
   failure domain experiences a failure
 * volume replicas placed within the same zone as a primary volume
 
-![tap](/images/docs/concepts/tap.png)
+![tap](../assets/images/concepts/tap.png)
 
 ## Enabling Topology-Aware Placement
 Topology-Aware Placement can be enabled by applying the label
@@ -36,7 +34,7 @@ your own topology key by setting the key string in the label
 `storageos.com/topology-key`.
 
 To enable TAP on your volumes, follow the 
-[TAP operations]({{< ref "docs/operations/tap.md" >}}) page.
+[TAP operations](../operations/tap.md) page.
 
 ## Behaviour
 
@@ -63,7 +61,7 @@ Failure modes are a complimentary feature of the Topology-Aware Placement
 functionality. Failure modes allow you to define how many replicas of a volume
 can become unavailable before the volume is marked as read-only. For more
 information , see the 
-[failure mode concepts page]({{< ref "docs/concepts/replication#failure-modes" >}}).
+[failure mode concepts page](../concepts/replication.md#failure-modes).
 
 For example, assuming that your cluster has three topology zones, A, B and C,
 and your deployment has a master and two replicas, Ondat will attempt to

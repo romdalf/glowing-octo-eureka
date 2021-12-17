@@ -1,9 +1,4 @@
----
-linkTitle: Labels
-title: Ondat Feature Labels
-aliases:
-  - /openapi-help/labels # url referenced from UI
----
+# Labels
 
 Feature labels are a powerful and flexible way to control storage features.
 
@@ -103,7 +98,7 @@ To create a volume with a feature label, choose one of the following options:
 | Pod fencing   | `storageos.com/fenced`         | true / false                         | Targets a pod to be fenced in case of node failure. The default value is `false` |
 
 > For a pod to be fenced by Ondat, a few requirements described in the
-> [Fencing Operations]({{< ref "docs/operations/fencing.md" >}}) page need to be fulfilled.
+> [Fencing Operations](../operations/fencing.md) page need to be fulfilled.
 
 ```bash
 kubectl label pod $POD storageos.com/fenced=true

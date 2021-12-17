@@ -1,6 +1,4 @@
----
-title: Resource Requests and Limits
----
+# Resource Requests and Limits
 
 ## Managing Resources for Ondat containers
 
@@ -31,6 +29,4 @@ documentation](https://kubernetes.io/docs/concepts/configuration/manage-resource
 
 ## Defining Pod resource requests and reservations
 
-To add resource requests and reservations to the Ondat DaemonSet [configure
-them in the StorageOSCluster
-resource]({{< ref "docs/reference/cluster-operator/examples.md" >}}#defining-pod-resource-requests-and-reservations).
+To add resource requests and reservations to the Ondat DaemonSet [configure them in the StorageOSCluster resource](../reference/cluster-operator/examples.md#defining-pod-resource-requests-and-reservations).

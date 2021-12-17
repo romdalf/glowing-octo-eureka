@@ -1,6 +1,4 @@
----
-title: Tolerations
----
+# Tolerations
 
 ## Kubernetes Tolerations
 
@@ -49,5 +47,5 @@ tolerations:
 
 To add custom tolerations to the Ondat daemonset [configure them in the
 StorageOSCluster
-resource](/docs/reference/cluster-operator/examples/#specifying-custom-tolerations).
+resource](../reference/cluster-operator/examples.md#specifying-custom-tolerations).
 

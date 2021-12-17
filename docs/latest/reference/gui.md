@@ -1,7 +1,4 @@
----
-linkTitle: GUI
-title: Graphical user interface (GUI)
----
+# GUI
 
 Ondat provides a GUI for cluster and volume management.
 
@@ -12,30 +9,30 @@ from the `storageos-api` Secret. By default `storageos`, `storageos`.
 > You can access the GUI by either port-forwarding with kubectl or using an
 > Ingress rule. i.e `kubectl -n storageos port-forward svc/storageos 5705`.
 
-![Logging in](/images/docs/gui-v2/login.png)
+![Logging in](../assets/images/gui-v2/login.png)
 
 ## Nodes
 
-![Nodes](/images/docs/gui-v2/nodes.png)
-![Node detail](/images/docs/gui-v2/node-detail.png)
+![Nodes](../assets/images/gui-v2/nodes.png)
+![Node detail](../assets/images/gui-v2/node-detail.png)
 
 ## Volumes
 
 You can create volumes, including replicated volumes, and view volume details:
 
-![Viewing storage volumes](/images/docs/gui-v2/volumes.png)
-![Viewing details of a volume](/images/docs/gui-v2/volume-detail.png)
+![Viewing storage volumes](../assets/images/gui-v2/volumes.png)
+![Viewing details of a volume](../assets/images/gui-v2/volume-detail.png)
 
 ## Licensing
 
-![License](/images/docs/gui-v2/license.png)
+![License](../assets/images/gui-v2/license.png)
 
 ## Cluster info
 
-![Cluster](/images/docs/gui-v2/cluster.png)
+![Cluster](../assets/images//gui-v2/cluster.png)
 
 ## Namespaces
 
 Volumes can be namespaced across different projects or teams, and you can switch namespace using the left hand panel:
 
-![Viewing namespaces](/images/docs/gui-v2/namespaces.png)
+![Viewing namespaces](../assets/images/gui-v2/namespaces.png)

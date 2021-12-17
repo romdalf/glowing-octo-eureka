@@ -1,6 +1,4 @@
----
-title: Init container
----
+# Init container
 
 Ondat has requirements for the configuration of host systems. As such,
 Ondat starts an init container that sets the system configuration for
@@ -8,14 +6,13 @@ Ondat. The container also manages configuration changes required when
 upgrading Ondat versions.
 
 The container belongs to the DaemonSet that the [Ondat Cluster
-Operator]({{< ref "docs/reference/cluster-operator/_index.md" >}}) starts when a
+Operator](../reference/cluster-operator/_index.md) starts when a
 `StorageOSCluster` resource is created. The `storageos-init` container is
 executed as an
 [initContainer](https://kubernetes.io/docs/concepts/workloads/pods/init-containers/)
 as part of a Kubernetes Pod. Therefore, only successful execution of the
 `storageos-init` container processes will result in the main container
 starting.
-
 
 ## Script Framework
 

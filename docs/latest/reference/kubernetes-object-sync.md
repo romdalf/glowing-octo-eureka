@@ -1,22 +1,19 @@
----
-title: Kubernetes Object Sync
----
+# Kubernetes Object Sync
 
-The below controllers are part of the [Ondat API manager]({{< ref
-"docs/concepts/components.md" >}}), and handle a variety of cases where
+The below controllers are part of the [Ondat API manager](../concepts/components.md), and handle a variety of cases where
 information about Kubernetes objects from your cluster needs to be synced to
 your Ondat cluster.
 
 The CSI Driver annotation mentioned below is added to your PVC or Node
 automatically by Ondat and is not removed. It is set by default in the case
-of a PVC [StorageClass]({{< ref "docs/operations/storageclasses.md" >}}) or
+of a PVC [StorageClass](../operations/storageclasses.md) or
 PVC's StorageClassName parameter, or in the case of a node, by the node driver
 registrar.
 
 ## PVC Label Sync
 
 The PVC Label Sync Controller applies labels that have been added to your PVCs
-to your [Ondat Volume objects]({{< ref "docs/concepts/volumes.md" >}}). The
+to your [Ondat Volume objects](../concepts/volumes.md). The
 PVC must have the Ondat CSI Driver annotation. If there is a label with the
 same key on the PVC and on the StorageClass the PVC label will take precedence.
 
@@ -35,8 +32,7 @@ flag for the [API Manager](https://github.com/storageos/api-manager)).
 ## Node Label Sync
 
 The Node Label Sync controller ensures that labels applied to your Kubernetes
-nodes are synced through to Ondat. It is necessary for your [Node]({{< ref
-"docs/concepts/nodes.md" >}}) to have the Ondat CSI Driver annotation.
+nodes are synced through to Ondat. It is necessary for your [Node](../concepts/nodes.md) to have the Ondat CSI Driver annotation.
 
 When labels are applied to your Kubernetes nodes, they do not automatically
 sync to Ondat, hence this controller is required to automatically apply the
@@ -65,13 +61,12 @@ deleted by this controller. The Volume must be deleted first and then the node.
 This is to prevent data loss by accidental deletion of a master volume. 
 
 A periodic garbage collection runs every hour (this is configurable via
-`-node-delete-gc-interval` flag for the [API
-Manager](https://github.com/storageos/api-manager).
+`-node-delete-gc-interval` flag for the [API Manager](https://github.com/storageos/api-manager).
 
 ## Namespace Delete
 
 The Namespace Delete Controller is responsible for removing Ondat
-[namespaces]({{< ref "docs/concepts/namespaces.md" >}}) from the Ondat
+[namespaces](../concepts/namespaces.md) from the Ondat
 cluster when the corresponding Kubernetes namespace has been removed from
 Kubernetes.
 
@@ -82,5 +77,4 @@ triggers on any Kubernetes namespace deletion event, syncing Kubernetes
 namespace deletion to Ondat namespace deletion.
 
 A periodic garbage collection runs every hour (this is configurable via
-`-namespace-delete-gc-interval` flag for the [API
-Manager](https://github.com/storageos/api-manager).
+`-namespace-delete-gc-interval` flag for the [API Manager](https://github.com/storageos/api-manager).

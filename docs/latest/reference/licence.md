@@ -1,11 +1,4 @@
----
-title: Licence
-aliases:
-  - /ui-help/licence/learn-more  # url referenced from UI
-  - /v2/help/unlicensed-expired  # url referenced from Error logs
-description: >
-  A cluster requires a licence to be issued within the first 24 hours.
----
+# Licence
 
 A newly installed Ondat cluster does not include a licence. A cluster can
 run unlicensed for 24 hours. After that, new operations such as volume
@@ -13,7 +6,7 @@ provisioning or adding nodes are not permitted. Normal functioning of the
 cluster can be unlocked by applying a Free Personal licence.
 
 To learn how to apply a licence to your cluster, check the [operations
-licensing]({{< ref "docs/operations/licensing.md" >}}) page.
+licensing](../operations/licensing.md) page.
 
 ## Free Personal licence
 

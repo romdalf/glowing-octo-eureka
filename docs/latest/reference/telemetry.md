@@ -1,8 +1,4 @@
----
-title: Ondat Telemetry
-aliases:
-  - /help/telemetry # URL from node container logs 
----
+# Ondat Telemetry
 
 Ondat collects telemetry and error reports from Ondat clusters via two
 different methods for two different purposes.
@@ -111,7 +107,7 @@ variables or the Ondat Cluster Spec.
 
 #### Ondat Cluster Spec
 Disable telemetry explicitly through the configurable [spec parameters](
-{{< ref "docs/reference/cluster-operator/configuration.md" >}}) of the
+../reference/cluster-operator/configuration.md) of the
 StorageOSCluster custom resource.
 
 #### Environment Variables

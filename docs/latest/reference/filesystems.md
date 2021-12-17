@@ -1,14 +1,12 @@
----
-title: Supported File systems
----
+# Supported File systems
 
 ## Host Filesystems
 
 Ondat will automatically use `/var/lib/storageos` on each host as a base
-directory for storing [configuration and blob
-files](/docs/concepts/volumes#blob-files). Supported host filesystem types
+directory for storing [configuration and blob files](../concepts/volumes.md#blob-files). 
+Supported host filesystem types
 are `ext4` and `xfs`. If you require a specific filesystem please [contact
-Ondat](/docs/support/contactus).
+Ondat](../support/contactus).
 
 ## Persistent Volume Filesystems
 
