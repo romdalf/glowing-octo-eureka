@@ -1,8 +1,4 @@
----
-title: Cluster Operator examples
-linkTitle: Examples
-weight: 30
----
+# Cluster Operator examples
 
 Before deploying a Ondat cluster, create a Secret to define the Ondat
 API Username and Password in base64 encoding.
@@ -46,7 +42,7 @@ default), irrespective of what NameSpace the CR is defined in.
 # Examples
 
 > You can checkout all the parameters configurable in the
-> [configuration]({{% relref "configuration.md" %}})
+> [configuration](configuration.md)
 > page.
 
 All examples must reference the `storageos-api` Secret.
@@ -78,8 +74,7 @@ spec:
   tlsEtcdSecretRefNamespace: "storageos"        # Make sure that the etcd secret is in the same NS as the Ondat cluster
 ```
 
-Follow the [etcd operations](
-{{< ref "docs/operations/etcd/storageos-secret-info.md" >}}) page to setup the
+Follow the [etcd operations](../../operations/etcd/storageos-secret-info.md) page to setup the
 secret with the Etcd client certificate, client key and CA.
 
 ## Installing to a subset of nodes

@@ -1,6 +1,3 @@
----
-title: Configuration
-weight: 20
----
+# Configuration
 
 {{% include "content/customresource-config-opts.md" %}}

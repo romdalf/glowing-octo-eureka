@@ -286,3 +286,25 @@ don't let people benchmark a sub-optimal setup!
 #### help.md
 #### update.md
 #### version.md
+### cluster-operator
+#### _index.md
+- update git reference from storageos to ondat 
+- cluster-operator is not relevant anymore
+#### configuration.md
+- update includess with content
+#### examples.md
+- review if still relevant in 2.5
+- ~~modify link to configuration.md~~
+- update git reference from storageos to ondat 
+- ~~modify link to operations/etcd/storageos-secret-info.md~~
+- update dead link to clusterdiscovery
+#### Install
+- to be remove as it's just refer to installation
+- ~~modify link install/kubernetes.md~~
+- ~~modify link install/rancher.md~~
+- ~~modify link install/openshift.md~~
+#### upgrade.md
+- to be removed and included in 
+- update git reference from storageos to ondat 
+- use git tag latest instead of version
+- reference to storage-operator not relevant in 2.5

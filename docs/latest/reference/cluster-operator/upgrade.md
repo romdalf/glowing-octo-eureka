@@ -1,8 +1,4 @@
----
-linkTitle: Operator upgrade
-title: Cluster Operator Upgrade
-weight: 40
----
+# Operator upgrade
 
 ## Upgrade Ondat operator from yaml manifest
 

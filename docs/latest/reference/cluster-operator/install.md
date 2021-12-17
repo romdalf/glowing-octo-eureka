@@ -1,10 +1,7 @@
----
-title: Install
-weight: 1
----
+# Install
 
 To install the operator follow the installation page for your orchestrator.
 
-1. [Kubernetes]({{< ref "docs/install/kubernetes.md" >}})
-1. [Rancher]({{< ref "docs/install/rancher.md" >}})
-1. [OpenShift]({{< ref "docs/install/openshift.md" >}})
+1. [Kubernetes](../../install/kubernetes.md)
+1. [Rancher](../../install/rancher.md)
+1. [OpenShift](../../install/openshift.md)
