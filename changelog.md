@@ -34,49 +34,49 @@ don't let people benchmark a sub-optimal setup!
 - should be a break down by topics
 
 ## concepts
-cluster-topologies.md
+### cluster-topologies.md
 - ~~adapt image assets elements~~
 - redo diagrams
-clusters.md
-components.md
+### clusters.md
+### components.md
 - ~~modify link to host-storage~~
 - ~~modify image links~~
 - ~~modify link to operator~~
 - ~~modify link to labels~~
-compression.md
+### compression.md
 - ~~modify link to labels~~
 - ~~modify link to replication~~
 - ~~modify link to encryption~~
-etcd.md
+### etcd.md
 - review quote
 - ~~modify link to etcd~~
-fencing.md
+### fencing.md
 - ~~modify link to operations/fencing~~
-namespaces.md
+### namespaces.md
 - ~~mofiy link to policies~~
-nodes.md
+### nodes.md
 - revise the needs of separate pages for hyper/compute mode
 - ~~modify link to labels~~
-policies.md
+### policies.md
 - ~~modify link to namespaces~~
 - ~~modify link to operations/policies~~
-replication.md
+### replication.md
 - ~~modify link to image~~
 - ~~modify link to labels/storageclass~~
 - ~~modify link to tap~~
 - include content/failure-mode
 - ~~modify link to failure-mode~~
-rwx.md
+### rwx.md
 - ~~modify link to concepts/volumes~~
 - ~~modify link to prerequisites/firewalls~~
 - ~~modify link to operations/resize.md~~
-volumes.md
+### volumes.md
 - ~~modify link to reference/filesystem~~
 - ~~modify link to operations/trim~~
 - ~~modify link to reference/encryption~~
 
 ## install
-kubernetes.md
+### kubernetes.md
 - ~~modify link to prerequisites/_index.md~~
 - modify the _index.md name 
 - include content for installation
@@ -85,14 +85,14 @@ kubernetes.md
 - create a dedicate airgap deployment guide
 - ~~modify link to refernce/kubectl-plugin~~
 - remove first volume
-openshift.md
+### openshift.md
 - break down in 3 pages: operatorhub, markeplace, manual
 - check layouts/shortcodes/openshift4-install.md
 - ~~modify link to prerequisites/_index.md~~
 - ~~modify link to platforms/openshift.md~~
 - ~~modify link to platforms/openshift.md~~
 - remove first volume
-rancher
+### rancher
 - break down in 2 pages: catalog, manual
 - ~~modify link to prerequisites/_index.md~~
 - ~~modify link to prerequisites/etcd~~
@@ -106,17 +106,17 @@ rancher
 - ~~modify link to reference/cluster/operator
 
 ## introduction
-overview.md
+### overview.md
 - ~~modify link to concepts/volumes.md~~
-platforms.md
+### platforms.md
 - seems to ~= support matrix / to revise for more content
 - ~~modify link to prerequisites/systemconfiguration~~
 - modify variables for k8s versions
-quickstart.md
+### quickstart.md
 - revise as this is not a quickstart - quickstart =? self-eval
 - ~~modify link to install/kubernetes.md~~
 - ~~modify link to install/openshift.md~~
 - ~~modify link to install/rancher.md~~
 - ~~modify link to usecases~~
 
-operations/
+## operations
