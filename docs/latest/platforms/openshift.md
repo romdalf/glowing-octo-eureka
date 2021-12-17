@@ -1,6 +1,4 @@
----
-title: OpenShift
----
+# OpenShift
 
 Ondat V2 supports Openshift v4.
 
@@ -13,12 +11,11 @@ communication between OpenShift and Ondat
 
 Ondat v2 supports OpenShift 4.0, 4.1, 4.2, 4.3, 4.4 and 4.5.
 
-To install Ondat on OpenShift, please follow our [installation
-instructions]({{< ref "docs/install/openshift.md">}}) page.
+To install Ondat on OpenShift, please follow our [installation instructions](../install/openshift.md) page.
 
 > N.B. Openshift 4 uses the CRI-O container runtime that sets a default PID
 > limit of 1024. Ondat recommends that the limit be raised to 32768.
-> Please see our [prerequisites](/docs/prerequisites/pidlimits) for more details.
+> Please see our [prerequisites](../prerequisites/pidlimits) for more details.
 
 ## OpenShift Upgrades
 
@@ -48,5 +45,4 @@ OpenShift controlplane.
 The user can provide standard PVC definitions and Ondat will dynamically
 provision them. Ondat presents volumes to containers with standard POSIX
 mount targets. This enables the Kubelet to mount Ondat volumes using
-standard linux device files. Checkout [device presentation]({{< ref
-"docs/prerequisites/systemconfiguration.md" >}}) for more details.
+standard linux device files. Checkout [device presentation](../prerequisites/systemconfiguration.md) for more details.

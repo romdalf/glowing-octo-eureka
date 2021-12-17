@@ -199,3 +199,29 @@ don't let people benchmark a sub-optimal setup!
 - ~~modify link to prerequisites/etcd.md~~
 #### storageos-secret-info.md
 - update git reference to coreos (repo archived)
+## platforms
+- revamp into a single page as support matrix
+### _index.md
+- ~~modify link to prerequisites/_index.md~~
+### aws-eks.md
+- add mention to EKS-anywhere
+- ~~modify link to install/kubernetes.md~~
+- ~~modify link to prerequisites/systemconfiguration.md~~
+- add mention to modinstall init container
+### azure-aks.md
+- ~~modify link to install/kubernetes.md~~
+### dockeree.md
+- ~~modify link to install/kubernetes.md~~
+- ~~modify link to prerequisites/systemconfiguration.md~~
+### google-gke.md
+- ~~modify link to install/kubernetes.md~~
+- ~~modify link to prerequisites/systemconfiguration.md~~
+- ~~modify link to prerequisites/systemconfiguration.md~~
+- ~~modify link to install/kubernetes.md~~
+### openshift.md
+- ~~modify link to install/openshift.md~~
+- ~~modify link to prerequisites/pidlimits~~
+- ~~modify link to prerequisites/systemconfiguration.md~~
+### rancher.md
+- ~~modify link to install/rancher.md~~
+- ~~modify link to prerequisites/systemconfiguration.md~~

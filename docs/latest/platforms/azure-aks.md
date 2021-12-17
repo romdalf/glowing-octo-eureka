@@ -1,10 +1,7 @@
----
-title: Azure AKS
----
+# Azure AKS
 
 Ondat is fully compatible with Azure AKS. To install Ondat on AKS, 
-follow our Kubernetes [installation instructions](
-{{< ref "docs/install/kubernetes.md">}}) page.
+follow our Kubernetes [installation instructions](../install/kubernetes.md) page.
 
 An AKS deployment of Kubernetes uses Ubuntu by default with an optimized
 kernel. All versions of Ubuntu with a kernel version later
