@@ -13,7 +13,7 @@ maybe into a top level topic with a breakdown in 1 or multiple pages
 
 ## self-eval.md
 - email to fix
-- fix latest version reference for images and cli stuff
+- use git artifact to latest instead of version
 - change rancher local path provisioner 
 - review the CLI deployment
 - check default storageclass for first pvc
@@ -64,131 +64,75 @@ don't let people benchmark a sub-optimal setup!
 ### overview.md
 ### platforms.md
 - seems to ~= support matrix / to revise for more content
-- modify variables for k8s versions
+- fix versioning of images, cli, ...
 ### quickstart.md
 - revise as this is not a quickstart - quickstart =? self-eval
-
 
 ## operations
 ### cluster-id.md
 - update the GUI screenshot to reflect license changes
-- ~~modify image link~~
 ### delete-stos-objects.md
 ### disk-full.md
-- ~~modify link to operations/managing-host-storage~~
-- ~~modify link to operations/managing-host-storage~~
 ### encryption.md
-- ~~modify link to reference/encryption~~
 - revisit the content to provide more context
 ### failure-modes.md
-- ~~modify link to concepts/replication~~
 - include the content/failure-modes.md 
 ### fening.md
-- ~~modify link to concepts/fencing.md~~
 ### firstpvc.md
 - update git reference to ondat account
-- ~~modify link to usecases/_index.md~~
 ### health.md
-- ~~modify link to reference/cli/_index.md~~
 ### label-stos.objects.md
-- ~~modify link to reference/kubernetes-object-sync.md~~
-- ~~modify link to operations/firstpvc.md~~
 ### licensing.md
 - breakdown into 3 pages; offering, cli, gui
 - remove tabs
-- ~~modify link to self-eval.md~~
-- ~~modify image links~~
-- ~~modify link to reference/cli~~
 ### managing-host-storage.md
 ### namespaces.md
 - no reference to concepts
 ### policies.md
-- ~~modify link to operations/namespaces.md~~
-- ~~modify link to reference/cli/create.md~~
 ### resize.md
-- ~~modify link to concepts/volumes~~
-- ~~modify image link~~
 ### rwx.md
-- ~~modify link to operations/firstpvc.md~~
 - add reference to firewall for NFS ganesha
 ### storageclasses.md
 - update git reference to point to ondat
-- ~~modify link to reference/tap.md~~
-- ~~modify link to operations/failure-modes.md~~
 ### tap.md
 ### trim.md 
 - add TRIM definition
 ### troubleshooting.md
 - collections of includes to breakdown into pages
-- ~~modify the link to github cli to internal doc cli~~
-- ~~modify link to support.md~~
 ### uninstall.md
 - full revamp for 2.5
 ### upgrade.md
 - check validity of the 2.3 requirements
 - page should be part of the release notes
-- replace container image version by "latest" 
+- use git artifact to latest instead of version
 - check the need to add a "backup etcd" reco
 ### users.md
-- ~~modify link to operations/namespaces.md~~
-- ~~modify link to operations/policies.md~~
 ### Etcd
 #### index.md
-- ~~modify link to prerequisites/etc.md~~
-- ~~modify link to prerequisites/etc.md~~
-- ~~modify link to operations/etcd/_index.md~~
 - update git reference to point to ondat
 #### migrate-etcd-cluster.md
-- ~~modify link to prerequisites/etcd.md~~
 - update git reference to point to ondat
-- ~~modify link to prerequisites/etcd.md~~
 #### storageos-secret-info.md
 - update git reference to coreos (repo archived)
 ## platforms
 - revamp into a single page as support matrix
 ### _index.md
-- ~~modify link to prerequisites/_index.md~~
 ### aws-eks.md
 - add mention to EKS-anywhere
-- ~~modify link to install/kubernetes.md~~
-- ~~modify link to prerequisites/systemconfiguration.md~~
 - add mention to modinstall init container
 ### azure-aks.md
-- ~~modify link to install/kubernetes.md~~
 ### dockeree.md
-- ~~modify link to install/kubernetes.md~~
-- ~~modify link to prerequisites/systemconfiguration.md~~
 ### google-gke.md
-- ~~modify link to install/kubernetes.md~~
-- ~~modify link to prerequisites/systemconfiguration.md~~
-- ~~modify link to prerequisites/systemconfiguration.md~~
-- ~~modify link to install/kubernetes.md~~
 ### openshift.md
-- ~~modify link to install/openshift.md~~
-- ~~modify link to prerequisites/pidlimits~~
-- ~~modify link to prerequisites/systemconfiguration.md~~
 ### rancher.md
-- ~~modify link to install/rancher.md~~
-- ~~modify link to prerequisites/systemconfiguration.md~~
 ## prerequisites
 ### _index.md
 - update include references
 - revise a merge with support matrix
-- ~~modify link to prerequisites/mountpropagation.md~~
-- ~~modify link to prerequisites/etcd.md~~
-- ~~modify link to prerequisites/systemconfiguration.md~~
-- ~~modify link to reference/cli/_index.md~~
-- ~~modify link to prerequisites/ipv6.md~~
 ### etcd
-- ~~modify link to concepts/etcd.md~~
-- ~~modify link to operations/etcd/_index.md~~
 - remove tabs
 - remove reference to coreos archived repo
-- ~~modify link to operations/etcd/_index.md~~
-- ~~modify page hyperlinks~~
-- ~~modify link to operations/etcd/_index.md~~
 - update git reference from storageos to ondat
-- ~~modify link to reference/cluster-operator/examples.md~~
 ### firewals.md
 ### ipv6.md
 ### max-aio.md
@@ -198,29 +142,20 @@ don't let people benchmark a sub-optimal setup!
 - update git reference from storageos to ondat
 ### systemconfiguration.md
 - curation of supported distro should be in a support matrix
-- ~~fix bad internal hyperlinks~~
-- ~~modify link to reference/cluster-operator/configuration.md~~
 ## reference
 ### bundles
 - to revamp within a support section
 #### _index.md
 #### diagnostic-bundle.md
-- ~~modify link to reference/cli/_index.md~~
-- ~~modify link to reference/gui.md~~
 - rebrand gui 
 #### support_bundle.md
-- ~~modify link to reference/bundles/diagnostic-bundle.md~~
-- update includes
 - update git reference from storageos to ondat
-- remove the concept of platform regarding plugin
-- ~~modify link to reference/cli/_index.md~~
 ### cli
 #### _index.md
 - update git reference from storageos to ondat
-- use git tag latest instead of version
+- use git artifact to latest instead of version
 - update EUSA link
 - update portal link
-- write a page MAN instead of multiple pages
 #### apply.md
 #### attach.md
 #### create.md
@@ -236,178 +171,75 @@ don't let people benchmark a sub-optimal setup!
 - update git reference from storageos to ondat 
 - cluster-operator is not relevant anymore
 #### configuration.md
-- update includess with content
 #### examples.md
 - review if still relevant in 2.5
-- ~~modify link to configuration.md~~
 - update git reference from storageos to ondat 
-- ~~modify link to operations/etcd/storageos-secret-info.md~~
 - update dead link to clusterdiscovery
-#### Install
+#### install.md
 - to be remove as it's just refer to installation
-- ~~modify link install/kubernetes.md~~
-- ~~modify link install/rancher.md~~
-- ~~modify link install/openshift.md~~
 #### upgrade.md
-- to be removed and included in 
 - update git reference from storageos to ondat 
-- use git tag latest instead of version
+- use git artifact to latest instead of version
 - reference to storage-operator not relevant in 2.5
 ### scheduler
 #### _index.md
-- ~~modify link to reference/scheduler/admission-controller.md~~
-- update includes with content
 #### admission-controller.md
-- ~~modify link to reference/scheduler/_index.md~~
-- update includes with content
 ### api.md
-- to review how to approach this
 ### contributing.md
 - update git reference from storageos to ondat 
-- use git tag latest instead of version
+- use git artifact to latest instead of version
 - to review with the contribution pillars 
 ### encryption.md
-- ~~modify link to concepts/volumes.md~~
-- ~~modify link to operations/encryption.md~~
-- ~~modify link to references/labels.md~~
 - update email address (to define) 
 ### filesystems.md
-- ~~modify link to concepts/volumes.md~~
-- ~~modify image links
 ### init-container.md
-- ~~modify link to reference/cluster-operator~~
 - update git reference from storageos to ondat 
-- use git tag latest instead of version
+- use git artifact to latest instead of version
 - dbupgrade link is dead
 ### kubectl-plugin.md
-- update includes with content
-- remove versioning
+- use git artifact to latest instead of version
 - missing the plugin MAN 
 ### kubernetes-object-sync.md
-- ~~modify link to concepts/components.md~~
-- ~~modify link to operations/storageclasses.md~~
-- ~~modify link to concepts/volumes.md~~
 - update git reference from storageos to ondat 
-- use git tag latest instead of version
-- ~~modify link to concepts/nodes.md~~
+- use git artifact to latest instead of version
 ### labels.md
-- ~~modify link to operations/fencing.md~~
 ### licence.md
-- ~~modify link to operations/licensing.md~~
 - to consolidate with licensing page
 ### open_source_attribution.md
 ### release_notes.md
 - only release notes of current major version 2.x should be in, not previous
 - include a deprecated section
 - update git reference from storageos to ondat 
-- use git tag latest instead of version
-- ~~modify link to support.md~~
-- ~~modify link to reference/tap.md~~
-- ~~modify link to reference/kubectl-plugin.md~~
-- ~~modify link to reference/licence.md~~
-- ~~modify link to reference/encryption.md~~
-- ~~modify link to concepts/fencing.md~~
-- ~~modify link to concepts/replication.md#failure-modes~~
-- ~~modify link to reference/kubernetes-object-sync~~
-- ~~modify link to concepts/rwx.md~~
-- ~~modify link to prerequisites/pidlimits.md~~
-- ~~modify link to self-eval.md#Benchmarking~~
-- ~~modify link to concepts/compression.md~~
+- use git artifact to latest instead of version
 - update slack URL
 - update blog post URL release of 2.0
 ### resource_requests_and_limits.md
-- ~~modify link to reference/cluster-operator/examples.md~~
 ### tap.md
-- ~~modify image links~~
-- ~~modify link to operations/tap.md~~
-- ~~modify link to concepts/replication.md#failure-modes~~
 - diagram to be updated
 ### telemetry.md
 - add some more details to sentry from a security perspective
-- ~~modify link to reference/cluster-operator/configuration.md~~
 ### tolerations.nd
-- ~~modify and fix reference/cluster-operator/examples.md#specifying-custom-tolerations~~
 
 ## usecases
-- replaces all the links to install with prereqs
-### _index.md
-### cassandra.md
-- ~~modify image links~~
 - check if there is trademark and copyright to be added
-- ~~modify link to install/kubernetes.md~~
-- update git reference from storageos to ondat 
-### elasticsearch.md
-- ~~modify image links~~
-- check if there is trademark and copyright to be added
-- ~~modify link to install/kubernetes.md~~
 - update git reference from storageos to ondat 
 - dead link operations/monitoring/prometheus-setup
+### _index.md
+### cassandra.md
+### elasticsearch.md
 ### influxdb.md
-- ~~modify image links~~
-- check if there is trademark and copyright to be added
-- ~~modify link to install/kubernetes.md~~
-- update git reference from storageos to ondat
 ### jenkins.md
-- ~~modify image links~~
-- check if there is trademark and copyright to be added
-- ~~update old external links to internal ones to doc~~
-- update git reference from storageos to ondat
 ### kafka.md
-- ~~modify image links~~
-- ~~modify link to install/kubernetes.md~~
-- ~~modify link to usecases/zookeeper.md~~
-- ~~modify link to reference/release_notes.md~~
-- update git reference from storageos to ondat
 ### kubvirt.md
-- ~~modify image links~~
-- check if there is trademark and copyright to be added
-- ~~update old external links to internal ones to doc~~
-- ~~modify link to install/kubernetes.md~~
-- update git reference from storageos to ondat
 ### mssql.md
-- ~~modify image links~~
-- check if there is trademark and copyright to be added
-- ~~modify link to install/kubernetes.md~~
-- update git reference from storageos to ondat
 ### mysql.md
-- ~~modify image links~~
-- check if there is trademark and copyright to be added
-- ~~modify link to install/kubernetes.md~~
-- update git reference from storageos to ondat
 ### nginx.md
-- ~~modify image links~~
-- check if there is trademark and copyright to be added
-- ~~modify link to install/kubernetes.md~~
-- update git reference from storageos to ondat
 ### postgres.md
-- ~~modify image links~~
-- check if there is trademark and copyright to be added
-- ~~modify link to install/kubernetes.md~~
-- update git reference from storageos to ondat
 ### prometheus.md
-- ~~modify image links~~
-- check if there is trademark and copyright to be added
-- ~~modify link to install/kubernetes.md~~
-- update git reference from storageos to ondat
-- update dead link to coreos/operators/prometheus
 ### redis.md
-- ~~modify image links~~
-- check if there is trademark and copyright to be added
-- ~~modify link to install/kubernetes.md~~
-- update git reference from storageos to ondat
 ### sidecar-backup.md
-- check if there is trademark and copyright to be added
-- ~~modify link to install/kubernetes.md~~
-- update git reference from storageos to ondat
 ### velero-backups.md
-- check if there is trademark and copyright to be added
-- ~~modify image links~~
-- update includes content
 ### zookeeper.md
-- ~~modify image links~~
-- check if there is trademark and copyright to be added
-- ~~modify link to install/kubernetes.md~~
-- update git reference from storageos to ondat
-- ~~modify link to reference/release_notes.md~~
+
 
 
