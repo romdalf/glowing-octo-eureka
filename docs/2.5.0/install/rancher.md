@@ -11,9 +11,6 @@ On Rancher, pay particular attention to
 the OS version and image used - some platforms require extra mainline kernel
 modules to be enabled.
 
-{{< tabs tabTotal="2" tabID="1" tabHREFPrefix="" tabName1="Catalog" tabName2="Manual
-{{% tab firstTab="true" tabRef="catalog" %}}
-
 # Catalog Install
 
 Ondat is a Certified application in the [Rancher
@@ -178,10 +175,6 @@ now create a Custom Resource that describes the Ondat cluster.
     > You can find more examples such as deployments referencing a external
     > etcd kv store for Ondat in the [Cluster Operator examples](../reference/cluster-operator/examples.md) page.
 
-
-{{% /tab %}}
-{{% tab tabRef="Manual" %}}
-
 # Manual Installation
 
 ## Install the storageos kubectl plugin
@@ -243,9 +236,6 @@ developer license is free, and supports up to 5TiB of provisioned storage.
 
 To obtain a license, follow the instructions on our [licensing operations](../operations/licensing.md     s) page.
 
-
-{{% /tab %}}
-{{< /tabs >}}
 
 ## First Ondat volume
 

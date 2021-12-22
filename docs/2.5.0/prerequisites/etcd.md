@@ -24,9 +24,6 @@ Please see our etcd operations page for additional information on deployment
 
 Click the tabs below to select the installation method of your choice.
 
-{{< tabs tabTotal="2" tabID="9"  tabName1="Testing" tabName2="Production" >}}
-{{% tab firstTab="true" tabName="testing" %}}
-
 ## Testing - Installing Etcd Into Your Kubernetes Cluster
 
 __This fast and convenient method is useful for quickly creating an etcd
@@ -266,8 +263,6 @@ __The etcd-operator doesn't support a full stop of the cluster. Stopping the
 etcd cluster causes the loss of all the etcd keystore and make Ondat
 unable to perform metadata changes.__
 
-{{% /tab %}}
-{{% tab  tabName="production" %}}
 
 ## Production - Etcd on External Virtual Machines
 
@@ -573,8 +568,6 @@ making them easy to reference from inside the cluster.  You can use the
 example from the [helper github repository](https://github.com/storageos/deploy/tree/master/k8s/deploy-storageos/etcd-helpers/etcd-external-svc)
 to deploy the external Service. Using an external service can make monitoring
 of etcd from Prometheus easier.
-{{% /tab %}}
-{{< /tabs >}}
 
 ## Using Etcd with Ondat
 

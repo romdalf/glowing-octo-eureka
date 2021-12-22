@@ -29,8 +29,7 @@ We recommend creating a separate filesystem for Ondat to mitigate the risk
 of filling the root filesystem on nodes. This has to be done for each node in
 the cluster.
 
-Follow the [managing host storage](
-{{ ref . "docs/operations/managing-host-storage.md" }}) best practices page for more
+Follow the [managing host storage](operations/managing-host-storage.md) best practices page for more
 details.
 
 ## Resource reservations
@@ -72,7 +71,7 @@ replicas, at least 4 storage nodes, 3 replicas, 5 nodes, etc.
 Minimum number of storage nodes = 1 (primary) + N (replicas) + 1
 
 For more information, see the section on
-[replication]({{ ref . "docs/concepts/replication.md#number-of-nodes" }}).
+[replication](concepts/replication.md#number-of-nodes).
 
 ## Ondat API username/password
 
@@ -129,8 +128,7 @@ volume replicas are being used.
 
 ## Port blocking
 
-Ondat exposes ports to operate. It is recommended that the [ports](
-{{ ref . "docs/prerequisites/firewalls.md" }}) are not accessible from outside
+Ondat exposes ports to operate. It is recommended that the [ports](prerequisites/firewalls.md) are not accessible from outside
 the scope of your cluster.
 
 ## Ondat in Docker EE

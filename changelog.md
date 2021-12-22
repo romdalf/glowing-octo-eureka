@@ -1,5 +1,15 @@
 # changelog
 
+Remaining includes are only related to software versioning in
+./docs/2.5.0/install/openshift.md
+./docs/2.5.0/prerequisites/etcd.md
+./docs/2.5.0/operations/uninstall.md
+./docs/2.5.0/operations/licensing.md
+./docs/2.5.0/self-eval.md
+./docs/2.5.0/reference/bundles/support_bundle.md
+
+See below for more details
+
 ## structure 
 - ~~created an archive, previous, latest, next folders~~
 - ~~copy 2.5 in latest~~

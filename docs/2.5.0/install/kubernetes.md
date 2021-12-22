@@ -13,9 +13,6 @@
 
 &nbsp;
 
-{{< tabs tabTotal="6" tabID="1" tabHREFPrefix="k8s-" tabName1="1.22" tabName2="1.21" tabName3="1.20" tabName4="1.19" tabName5="1.18">}}
-{{% tab firstTab="true" tabRef="k8s-122" %}}
-
 # Install ondat on kubernetes 1.22
 
 ## Install the storageos kubectl plugin
@@ -74,10 +71,6 @@ Newly installed Ondat clusters must be licensed within 24 hours. Our
 developer license is free, and supports up to 5TiB of provisioned storage.
 
 To obtain a license, follow the instructions on our [licensing operations](..//operations/licensing.md) page.
-
-{{% /tab %}}
-
-{{% tab tabRef="k8s-121" %}}
 
 # Install Ondat on Kubernetes 1.21
 
@@ -138,8 +131,6 @@ developer license is free, and supports up to 5TiB of provisioned storage.
 
 To obtain a license, follow the instructions on our [licensing operations](..//operations/licensing.md) page.
 
-{{% /tab %}}
-{{% tab tabRef="k8s-120" %}}
 # Install Ondat on Kubernetes 1.20
 
 ## Install the storageos kubectl plugin
@@ -199,9 +190,6 @@ developer license is free, and supports up to 5TiB of provisioned storage.
 
 To obtain a license, follow the instructions on our [licensing operations](..//operations/licensing.md) page.
 
-{{% /tab %}}
-
-{{% tab tabRef="k8s-119" %}}
 # Install Ondat on Kubernetes 1.19
 
 ## Install the storageos kubectl plugin
@@ -261,9 +249,7 @@ developer license is free, and supports up to 5TiB of provisioned storage.
 
 To obtain a license, follow the instructions on our [licensing operations](..//operations/licensing.md) page.
 
-{{% /tab %}}
 
-{{% tab tabRef="k8s-118" %}}
 # Install Ondat on Kubernetes 1.18
 
 ## Install the storageos kubectl plugin
@@ -323,8 +309,6 @@ developer license is free, and supports up to 5TiB of provisioned storage.
 
 To obtain a license, follow the instructions on our [licensing operations](..//operations/licensing.md) page.
 
-{{% /tab %}}
-{{< /tabs >}}
 
 ## Airgapped clusters
 
