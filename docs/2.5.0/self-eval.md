@@ -13,8 +13,7 @@ setups, operational guides, and use-cases, please see our main [documentation si
 ## Support for Self Evaluations
 
 Should you have questions or require support, there are several ways to get in
-touch with us. The fastest way to get in touch is to [join our public Slack
-channel](https://slack.storageos.com). You can also get in touch via email to
+touch with us. The fastest way to get in touch is to [join our public Slack channel](https://slack.storageos.com). You can also get in touch via email to
 [info@storageos.com](mailto:support@storageos.com).
 
 # Installation
@@ -27,8 +26,7 @@ main [documentation pages](prerequisites/etcd.md).
 
 A standard Ondat installation uses the Ondat operator, which performs
 most platform-specific configuration for you. The Ondat operator has been
-certified by [Red Hat](https://storageos.com/red-hat/) and is [open
-source](https://github.com/storageos/operator).
+certified by [Red Hat](https://storageos.com/red-hat/) and is [open source](https://github.com/storageos/operator).
 
 The basic installation steps are:
 
@@ -59,7 +57,18 @@ modern distributions:
 > Run the following command where `kubectl` is installed and with the context
 > set for your Kubernetes cluster
 
-{{% plugin-curl-install plugin_version="v1.0.0" %}}
+## Install the storageos kubectl plugin
+
+```
+curl -sSLo kubectl-storageos.tar.gz \
+    https://github.com/storageos/kubectl-storageos/releases/download/{{ $version }}/kubectl-storageos_{{ trim $version "v" }}_linux_amd64.tar.gz \
+    && tar -xf kubectl-storageos.tar.gz \
+    && chmod +x kubectl-storageos \
+    && sudo mv kubectl-storageos /usr/local/bin/ \
+    && rm kubectl-storageos.tar.gz
+```
+
+> You can find binaries for different architectures and systems in [kubectl plugin](https://github.com/storageos/kubectl-storageos/releases).
 
 ## Prepare Etcd StorageClass
 
@@ -87,7 +96,28 @@ kubectl storageos install  \
     --admin-password storageos
 ```
 
-{{% verify-ondat-install %}}
+## Verify Ondat installation
+
+Ondat installs all its components in the `storageos` namespace.
+
+```bash
+$ kubectl -n storageos get pod -w
+NAME                                     READY   STATUS    RESTARTS   AGE
+storageos-api-manager-65f5c9dbdf-59p2j   1/1     Running   0          36s
+storageos-api-manager-65f5c9dbdf-nhxg2   1/1     Running   0          36s
+storageos-csi-helper-65dc8ff9d8-ddsh9    3/3     Running   0          36s
+storageos-node-4njd4                     3/3     Running   0          55s
+storageos-node-5qnl7                     3/3     Running   0          56s
+storageos-node-7xc4s                     3/3     Running   0          52s
+storageos-node-bkzkx                     3/3     Running   0          58s
+storageos-node-gwp52                     3/3     Running   0          62s
+storageos-node-zqkk7                     3/3     Running   0          62s
+storageos-operator-8f7c946f8-npj7l       2/2     Running   0          64s
+storageos-scheduler-86b979c6df-wndj4     1/1     Running   0          64s
+```
+
+> Wait until all the pods are ready. It usually takes ~60 seconds to complete
+
 
 ## Deploy the Ondat CLI as a container
 
@@ -136,7 +166,13 @@ POD=$(kubectl -n storageos get pod -ocustom-columns=_:.metadata.name --no-header
 kubectl -n storageos exec $POD -- storageos get licence
 ```
 
-{{% license-cluster-plugin-install %}}
+## License cluster
+
+Newly installed Ondat clusters must be licensed within 24 hours. Our
+developer license is free, and supports up to 5TiB of provisioned storage.
+
+To obtain a license, follow the instructions on our [licensing operations](operations/licensing.md) page.
+
 
 ## Provision a Ondat Volume
 
@@ -573,6 +609,4 @@ After completing these steps you will have benchmark scores for Ondat.
 Please keep in mind that benchmarks are only part of the story and that there
 is no replacement for testing actual production or production like workloads.
 
-Ondat invites you to provide feedback on your self-evaluation to the [slack
-channel](https://storageos.slack.com) or by directly emailing us at
-<info@ondat.io>.
+Ondat invites you to provide feedback on your self-evaluation to the [slack channel](https://storageos.slack.com) or by directly emailing us at <info@ondat.io>.

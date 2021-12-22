@@ -15,9 +15,7 @@ definitions of our support severity levels on our
 
 Responses to tickets will be cc'd via email.
 
-For personal support and general enquiries, please join our [public Slack
-channel.](https://slack.storageos.com) <script async defer
-src="http://slack.storageos.com/slackin.js"></script>
+For personal support and general enquiries, please join our [public Slack channel](https://slack.storageos.com).
 
 ## Information to include in tickets
 

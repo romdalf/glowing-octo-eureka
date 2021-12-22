@@ -183,15 +183,71 @@ now create a Custom Resource that describes the Ondat cluster.
 {{% tab tabRef="Manual" %}}
 
 # Manual Installation
-{{% plugin-curl-install plugin_version="v1.0.0-beta.1" %}}
-{{% ondat-plugin-install %}}
+
+## Install the storageos kubectl plugin
+
+```
+curl -sSLo kubectl-storageos.tar.gz \
+    https://github.com/storageos/kubectl-storageos/releases/download/{{ $version }}/kubectl-storageos_{{ trim $version "v" }}_linux_amd64.tar.gz \
+    && tar -xf kubectl-storageos.tar.gz \
+    && chmod +x kubectl-storageos \
+    && sudo mv kubectl-storageos /usr/local/bin/ \
+    && rm kubectl-storageos.tar.gz
+```
+
+> You can find binaries for different architectures and systems in [kubectl
+> plugin](https://github.com/storageos/kubectl-storageos/releases).
+
+## Install Ondat
+
+```bash
+kubectl storageos install \
+    --etcd-endpoints 'storageos-etcd-client.storageos-etcd:2379' \
+    --admin-username "myuser" \
+    --admin-password "my-password"
+```
+
+> Define the etcd endpoints as a comma delimited list, e.g. 10.42.3.10:2379,10.42.1.8:2379,10.42.2.8:2379
+
+> If the etcd endpoints are not defined, the plugin will promt you and
+> request the endpoints.
 
 For more details on the installation options, check the [kubectl storageos plugin reference page](../reference/kubectl-plugin).
 
-{{% verify-ondat-install %}}
-{{% license-cluster-plugin-install %}}
+## Verify Ondat installation
+
+Ondat installs all its components in the `storageos` namespace.
+
+```bash
+$ kubectl -n storageos get pod -w
+NAME                                     READY   STATUS    RESTARTS   AGE
+storageos-api-manager-65f5c9dbdf-59p2j   1/1     Running   0          36s
+storageos-api-manager-65f5c9dbdf-nhxg2   1/1     Running   0          36s
+storageos-csi-helper-65dc8ff9d8-ddsh9    3/3     Running   0          36s
+storageos-node-4njd4                     3/3     Running   0          55s
+storageos-node-5qnl7                     3/3     Running   0          56s
+storageos-node-7xc4s                     3/3     Running   0          52s
+storageos-node-bkzkx                     3/3     Running   0          58s
+storageos-node-gwp52                     3/3     Running   0          62s
+storageos-node-zqkk7                     3/3     Running   0          62s
+storageos-operator-8f7c946f8-npj7l       2/2     Running   0          64s
+storageos-scheduler-86b979c6df-wndj4     1/1     Running   0          64s
+```
+
+> Wait until all the pods are ready. It usually takes ~60 seconds to complete
+
+## License cluster
+
+Newly installed Ondat clusters must be licensed within 24 hours. Our
+developer license is free, and supports up to 5TiB of provisioned storage.
+
+To obtain a license, follow the instructions on our [licensing operations](../operations/licensing.md     s) page.
+
 
 {{% /tab %}}
 {{< /tabs >}}
 
-{{% include "content/first-volume.md" %}}
+## First Ondat volume
+
+If this is your first installation you may wish to follow the [Ondat Volume guide](../operations/firstpvc.md) for an example of how
+to mount a Ondat volume in a Pod.
