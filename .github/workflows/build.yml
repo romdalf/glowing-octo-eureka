@@ -1,0 +1,49 @@
+name: render static website
+
+on: 
+  workflow_dispatch:
+
+env:
+  working_directory: .
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v2
+
+      - name: feed content to backend
+        working-directory: ${{ env.working_directory }}
+        env: 
+          GITHUB_TOKEN: ${{ secrets.GH_PAGES }}
+        shell: |
+
+        mkdir -p /tmp
+        cd /tmp
+        git clone https://oauth2:$GITHUB_TOKEN@github.com/glowing-octo-eureka.git
+        mv glowing-octo-eureka main
+        git clone --branch gh-pages https://oauth2:$GITHUB_TOKEN@github.com/glowing-octo-eureka.git
+        mv glowing-octo-eureka gh-pages
+        cp -R main/docs main/content/
+        cp -R main/images main/static/
+        cp -R main/sh main/static/
+        cp -R main/yaml main/static/
+        wget https://github.com/gohugoio/hugo/releases/download/v0.91.2/hugo_0.91.2_Linux-64bit.tar.gz
+        tar xfv hugo_0.91.2_Linux-64bit.tar.gz
+        cd main
+        ../hugo -D config/latest.toml
+        cd ..
+        cp -R main/site/latest/* gh-pages/
+        cd gh-pages/
+        git add --all .
+        git commit -"git action push"
+        git push 
+        cd ..
+        rm -rf main gh-pages
+
+
+
+
+
