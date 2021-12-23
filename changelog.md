@@ -64,6 +64,7 @@ don't let people benchmark a sub-optimal setup!
 - break down in 3 pages: operatorhub, markeplace, manual
 - fix versioning of images, cli, ...
 - remove first volume
+- remove the manual deployment as it is not relevant anymore
 ### rancher
 - break down in 2 pages: catalog, manual
 - modify this document should be only for production grade
@@ -110,7 +111,8 @@ don't let people benchmark a sub-optimal setup!
 ### troubleshooting.md
 - collections of includes to breakdown into pages
 ### uninstall.md
-- full revamp for 2.5
+- full revamp for 2.5 required ASAP!
+- remove reference to operators
 ### upgrade.md
 - check validity of the 2.3 requirements
 - page should be part of the release notes
@@ -191,6 +193,7 @@ don't let people benchmark a sub-optimal setup!
 - update git reference from storageos to ondat 
 - use git artifact to latest instead of version
 - reference to storage-operator not relevant in 2.5
+- remove the reference as this is irrelevant
 ### scheduler
 #### _index.md
 #### admission-controller.md
