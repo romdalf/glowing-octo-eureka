@@ -18,7 +18,8 @@ jobs:
         working-directory: ${{ env.working_directory }}
         env: 
           GITHUB_TOKEN: ${{ secrets.GH_PAGES }}
-        shell: |
+        shell: /bin/bash -e {0}
+        run: |
 
         mkdir -p /tmp
         cd /tmp
