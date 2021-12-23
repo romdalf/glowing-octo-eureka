@@ -21,6 +21,7 @@ jobs:
         shell: /bin/bash -e {0}
         run: |
 
+        ls
         mkdir -p /tmp
         cd /tmp
         git clone https://oauth2:$GITHUB_TOKEN@github.com/glowing-octo-eureka.git
