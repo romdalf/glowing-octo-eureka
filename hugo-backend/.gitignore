@@ -1,6 +1,0 @@
-/resources/*
-.vscode
-.DS_Store
-node_modules
-docs
-.hugo_build.lock
