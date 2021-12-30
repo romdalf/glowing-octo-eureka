@@ -19,35 +19,35 @@ jobs:
         shell: /bin/bash -e {0}
         run: |
 
-          ls
-          mkdir -p /tmp
-          cd /tmp
+          echo "--> Creating a tempory working directory"
+          mkdir -p tmp
+          cd tmp
           echo "--> Cloning to get main as a source for rendering the pages"
-          git clone --branch main https://oauth2:$GITHUB_TOKEN@github.com/rovandep/glowing-octo-eureka.git
-          mv glowing-octo-eureka main
+          git clone --branch main https://github.com/rovandep/glowing-octo-eureka.git main
           echo "--> Cloning to get gh-pages as a destination for rendered pages"
-          git clone --branch gh-pages https://oauth2:$GITHUB_TOKEN@github.com/rovandep/glowing-octo-eureka.git
-          mv glowing-octo-eureka gh-pages
-          ls -al
+          git clone --branch gh-pages https://github.com/rovandep/glowing-octo-eureka.git gh-pages
           echo "--> Moving contents to hugo native folder structure"
           cp -R main/docs main/hugo-backend/content/
           cp -R main/images main/hugo-backend/static/
           cp -R main/sh main/hugo-backend/static/
           cp -R main/yaml main/hugo-backend/static/
+          echo "--> Moving to main/hugo-backend"
+          cd main/hugo-backend
           echo "--> Getting latest known working hugo binary with current framework"
           wget https://github.com/gohugoio/hugo/releases/download/v0.91.0/hugo_extended_0.91.0_Linux-64bit.tar.gz
           tar xvzf hugo_extended_0.91.0_Linux-64bit.tar.gz
-          cd main/hugo-backend
-          ls -al
-          ../../hugo -D --config config/latest.toml
-          cd
-          cp -R main/site/latest/* gh-pages/
-          cd gh-pages/
+          echo "--> Rendering markdown to html based on config/latest.toml file"
+          hugo -D --config config/latest.toml
+          echo "--> Copying latest version to gh-pages"
+          cp -R sites/latest/* ../../gh-pages/
+          echo "--> Adding, committing, and pushing the latest build to gh-pages"
+          cd ../../gh-pages/
           git add --all .
           git commit -m "git action push"
           git push 
-          cd ..
-          rm -rf main gh-pages
+          echo "--> Time to clean up"
+          cd ../..
+          rm -rf tmp
 
 
 
