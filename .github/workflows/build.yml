@@ -24,17 +24,23 @@ jobs:
           ls
           mkdir -p /tmp
           cd /tmp
-          git clone https://oauth2:$GITHUB_TOKEN@github.com/rovandep/glowing-octo-eureka.git
+          echo "--> Cloning to get main as a source for rendering the pages"
+          git clone --branch main https://oauth2:$GITHUB_TOKEN@github.com/rovandep/glowing-octo-eureka.git
           mv glowing-octo-eureka main
+          echo "--> Cloning to get gh-pages as a destination for rendered pages"
           git clone --branch gh-pages https://oauth2:$GITHUB_TOKEN@github.com/rovandep/glowing-octo-eureka.git
           mv glowing-octo-eureka gh-pages
-          cp -R main/docs main/content/
-          cp -R main/images main/static/
-          cp -R main/sh main/static/
-          cp -R main/yaml main/static/
+          ls -al
+          echo "--> Moving contents to hugo native folder structure"
+          cp -R main/docs main/hugo-backend/content/
+          cp -R main/images main/hugo-backend/static/
+          cp -R main/sh main/hugo-backend/static/
+          cp -R main/yaml main/hugo-backend/static/
+          echo "--> Getting latest known working hugo binary with current framework"
           wget https://github.com/gohugoio/hugo/releases/download/v0.91.2/hugo_0.91.2_Linux-64bit.tar.gz
           tar xfv hugo_0.91.2_Linux-64bit.tar.gz
           cd main
+          ls -al
           ../hugo -D --config config/latest.toml
           cd ..
           cp -R main/site/latest/* gh-pages/
