@@ -11,9 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: checkout repo
-        uses: actions/checkout@v2
-
+    
       - name: feed content to backend
         working-directory: ${{ env.working_directory }}
         env: 
@@ -39,10 +37,10 @@ jobs:
           echo "--> Getting latest known working hugo binary with current framework"
           wget https://github.com/gohugoio/hugo/releases/download/v0.91.2/hugo_0.91.2_Linux-64bit.tar.gz
           tar xfv hugo_0.91.2_Linux-64bit.tar.gz
-          cd main
+          cd main/hugo-backend
           ls -al
-          ../hugo -D --config config/latest.toml
-          cd ..
+          ../../hugo -D --config config/latest.toml
+          cd
           cp -R main/site/latest/* gh-pages/
           cd gh-pages/
           git add --all .
