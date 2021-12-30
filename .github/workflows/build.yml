@@ -24,9 +24,9 @@ jobs:
           ls
           mkdir -p /tmp
           cd /tmp
-          git clone https://oauth2:$GITHUB_TOKEN@github.com/glowing-octo-eureka.git
+          git clone https://oauth2:$GITHUB_TOKEN@github.com/rovandep/glowing-octo-eureka.git
           mv glowing-octo-eureka main
-          git clone --branch gh-pages https://oauth2:$GITHUB_TOKEN@github.com/glowing-octo-eureka.git
+          git clone --branch gh-pages https://oauth2:$GITHUB_TOKEN@github.com/rovandep/glowing-octo-eureka.git
           mv glowing-octo-eureka gh-pages
           cp -R main/docs main/content/
           cp -R main/images main/static/
