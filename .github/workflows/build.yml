@@ -13,6 +13,7 @@ jobs:
     steps:
     
       - name: feed content to backend
+        continue-on-error: true
         working-directory: ${{ env.working_directory }}
         env: 
           GITHUB_TOKEN: ${{ secrets.GH_PAGES }}
