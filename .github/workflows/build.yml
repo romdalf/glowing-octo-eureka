@@ -39,6 +39,7 @@ jobs:
           echo "--> Rendering markdown to html based on config/latest.toml file"
           npm install -g npm@8.3.0
           npm install postcss-cli
+          npm install autoprefixer
           ./hugo -D --config config/latest.toml
           echo "--> Copying latest version to gh-pages"
           cp -R sites/latest/* ../../gh-pages/
