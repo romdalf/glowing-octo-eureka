@@ -35,8 +35,8 @@ jobs:
           cp -R main/sh main/hugo-backend/static/
           cp -R main/yaml main/hugo-backend/static/
           echo "--> Getting latest known working hugo binary with current framework"
-          wget https://github.com/gohugoio/hugo/releases/download/v0.91.2/hugo_extended_0.91.2_Linux-64bit.tar.gz
-          tar xvzf hugo_extended_0.91.2_Linux-64bit.tar.gz
+          wget https://github.com/gohugoio/hugo/releases/download/v0.91.2/hugo_extended_0.91.0_Linux-64bit.tar.gz
+          tar xvzf hugo_extended_0.91.0_Linux-64bit.tar.gz
           cd main/hugo-backend
           ls -al
           ../../hugo -D --config config/latest.toml
