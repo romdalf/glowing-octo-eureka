@@ -35,7 +35,7 @@ jobs:
           wget https://github.com/gohugoio/hugo/releases/download/v0.91.2/hugo_0.91.2_Linux-64bit.tar.gz
           tar xfv hugo_0.91.2_Linux-64bit.tar.gz
           cd main
-          ../hugo -D config/latest.toml
+          ../hugo -D --config config/latest.toml
           cd ..
           cp -R main/site/latest/* gh-pages/
           cd gh-pages/
