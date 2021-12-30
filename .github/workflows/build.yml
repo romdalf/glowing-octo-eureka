@@ -40,7 +40,7 @@ jobs:
           cp -R main/site/latest/* gh-pages/
           cd gh-pages/
           git add --all .
-          git commit -"git action push"
+          git commit -m "git action push"
           git push 
           cd ..
           rm -rf main gh-pages
