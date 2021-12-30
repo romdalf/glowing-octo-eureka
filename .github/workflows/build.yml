@@ -13,7 +13,6 @@ jobs:
     steps:
     
       - name: feed content to backend
-        continue-on-error: true
         working-directory: ${{ env.working_directory }}
         env: 
           GITHUB_TOKEN: ${{ secrets.GH_PAGES }}
@@ -38,6 +37,7 @@ jobs:
           wget https://github.com/gohugoio/hugo/releases/download/v0.91.0/hugo_extended_0.91.0_Linux-64bit.tar.gz
           tar xvzf hugo_extended_0.91.0_Linux-64bit.tar.gz
           echo "--> Rendering markdown to html based on config/latest.toml file"
+          npm install postcss-cli
           ./hugo -D --config config/latest.toml
           echo "--> Copying latest version to gh-pages"
           cp -R sites/latest/* ../../gh-pages/
