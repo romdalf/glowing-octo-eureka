@@ -45,6 +45,7 @@ jobs:
           cp -R sites/latest/* ../../gh-pages/
           echo "--> Adding, committing, and pushing the latest build to gh-pages"
           cd ../../gh-pages/
+          touch .nojekyll
           git config --global user.name 'GitHub Actions'
           git config --global user.email 'rovandep@users.noreply.github.com'
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/rovandep/glowing-octo-eureka.git          
